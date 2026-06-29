@@ -7,7 +7,12 @@
       "Barem bể 1",
       "Barem bể 2",
       "Barem bể 3"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2": "Bể 2 - Dầu Do 0.001S-V",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_102_BAREM_UPDATE",
@@ -17,7 +22,12 @@
       "Barem bể 3",
       "Barem bể 4",
       "Barem bể 5"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 5": "Bể 5 - Dầu DO 0.001S-V"
+    }
   },
   {
     "id": "CHXD_104_BAREM_UPDATE",
@@ -26,7 +36,11 @@
     "tanks": [
       "Barem bể 1",
       "Barem bể 2"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_105_BAREM_UPDATE",
@@ -38,7 +52,13 @@
       "Barem bể 3",
       "Barem bể 4",
       "Barem bể 5"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Bể 01 Dầu DO 0,001S-V",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 5": "Bể 5 - Dầu Điêzen 0,001S Mức 5"
+    }
   },
   {
     "id": "CHXD_106_BAREM_UPDATE",
@@ -47,7 +67,11 @@
     "tanks": [
       "Barem 10m3 (95-95V-Do)",
       "Barem 20m3 (Do 0,05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem 10m3 (95-95V-Do)": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem 20m3 (Do 0,05)": "Bể 1 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_107_BAREM_UPDATE",
@@ -58,7 +82,13 @@
       "Barem bể 2",
       "Barem bể 3",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3": "Bể 3 - Dầu DO 0,001S-V",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_108_BAREM_UPDATE",
@@ -68,7 +98,12 @@
       "Barem bể 01",
       "Barem bể 02",
       "Barem bể 03"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 01": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 02": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 03": "Bể 3 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_109_BAREM_UPDATE",
@@ -79,7 +114,13 @@
       "Barem bể 2 (DO 0.05)",
       "Barem bể 3 (2-K)",
       "Barem bể 4 (RON 95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 92)": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 (DO 0.05)": "Bể 2 - Do 0.05S-II",
+      "Barem bể 3 (2-K)": "Bể 3 - Dầu Do 0.001S-V",
+      "Barem bể 4 (RON 95)": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_110_BAREM_UPDATE",
@@ -90,7 +131,13 @@
       "Barem bể 2 (DO 0.05)",
       "Barem bể 3 (RON 95V)",
       "Barem bể 4 (Dầu DO)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95)": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 (DO 0.05)": "Bể 2 - Bể 02- Dầu DO 0.05S-II",
+      "Barem bể 3 (RON 95V)": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4 (Dầu DO)": "Bể 4 - Dầu Do 0.001S-V"
+    }
   },
   {
     "id": "CHXD_111_BAREM_UPDATE",
@@ -101,7 +148,13 @@
       "Barem bể 2",
       "Barem bể 3",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Dầu Do 0.05S-II",
+      "Barem bể 2": "Bể 2 - Dầu DO 0.001S-V",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_112_BAREM_UPDATE",
@@ -111,7 +164,12 @@
       "Barem bể 1",
       "Barem bể 2",
       "Barem bể 3"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Dầu DO 0.001S-V",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_113_BAREM_UPDATE",
@@ -123,7 +181,14 @@
       "Barem bể 3",
       "Barem bể 4",
       "Barem bể 5"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2": "Bể 2 - Dầu DO 0.001S-V",
+      "Barem bể 3": "Bể 3 - Dầu DO 0.05S-II",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 5": "Bể 5 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_114_BAREM_UPDATE",
@@ -133,7 +198,12 @@
       "Barem bể 1 (RON 95)",
       "Barem bể 2 (DO 0.001)",
       "Barem bể 3(RON 95V)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95)": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 (DO 0.001)": "Bể 2 - Dầu DO 0.001S-V",
+      "Barem bể 3(RON 95V)": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_115_BAREM_UPDATE",
@@ -144,7 +214,13 @@
       "Barem bể 2 (RON 95V)",
       "Barem bể 3 (DO 0.001)",
       "Barem bể 4 (DO 0.05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2 (RON 95V)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (DO 0.001)": "Bể 3 - Dầu DO 0.001S-V",
+      "Barem bể 4 (DO 0.05)": "Bể 4 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_116_BAREM_UPDATE",
@@ -153,7 +229,11 @@
     "tanks": [
       "Barem 10m3 (95)",
       "Barem 25m3 (Do 0,05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem 10m3 (95)": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem 25m3 (Do 0,05)": "Bể 3 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_117_BAREM_UPDATE",
@@ -163,7 +243,12 @@
       "Barem bể 01",
       "Barem bể 02",
       "Barem bể 03"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 01": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 02": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 03": "Bể 3 - Dầu Điêzen 0,05S Mức 2"
+    }
   },
   {
     "id": "CHXD_118_BAREM_UPDATE",
@@ -175,7 +260,13 @@
       "Barem bể 3 (RON 92)",
       "Barem bể 4 (RON 95)",
       "Barem bể 5 (RON 95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (DO 0.001)": "Bể 1 - Dầu DO 0.001S-V",
+      "Barem bể 2 (DO 0.05)": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 4 (RON 95)": "Bể 4 - Xăng E10 RON 95 Mức 5 (NEW)",
+      "Barem bể 5 (RON 95)": "Bể 5 - Xăng E10 RON 95 Mức 5 (NEW)"
+    }
   },
   {
     "id": "CHXD_119_BAREM_UPDATE",
@@ -186,7 +277,13 @@
       "Barem bể 2",
       "Barem bể 3",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 ": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 4": "Bể 4 - Dầu DO 0.001S-V"
+    }
   },
   {
     "id": "CHXD_120_BAREM_2024",
@@ -196,7 +293,12 @@
       "Barem bể 1",
       "Barem bể 2",
       "Barem bể 3"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 3": "Bể 3 - Dầu DO 0.001S-V"
+    }
   },
   {
     "id": "CHXD_121_BAREM_UPDATE",
@@ -207,7 +309,13 @@
       "Barem bể 2 ",
       "Barem bể 3",
       "Barem bể 4 "
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 ": "Bể 1 - Dầu Điêzen 0,05S Mức 2",
+      "Barem bể 2 ": "Bể 2 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4 ": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_122_BAREM_UPDATE",
@@ -218,7 +326,11 @@
       "Barem bể 2 ",
       "Barem bể 3 ",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 2 ": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_123_BAREM_UPDATE",
@@ -228,7 +340,10 @@
       "Barem bể 01 (Do 0,05)",
       "Barem bể 01 (95-III)",
       "Barem bể 02 (E5)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 02 (E5)": "Bể 2 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_124_BAREM_UPDATE",
@@ -239,7 +354,13 @@
       "Barem bể 2 (RON 95V)",
       "Barem bể 3 (DO 0,001)",
       "Barem bể 4 (DO 0,05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2 (RON 95V)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (DO 0,001)": "Bể 3 - Dầu DO 0.001S-V",
+      "Barem bể 4 (DO 0,05)": "Bể 4 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_126_BAREM_UPDATE",
@@ -249,7 +370,12 @@
       "Barem bể 1 (RON 95V)",
       "Barem bể 2 (RON 95)",
       "Barem bể 3 (DO 0.05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95V)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2 (RON 95)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (DO 0.05)": "Bể 3 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_127_BAREM_UPDATE",
@@ -261,7 +387,14 @@
       "Barem bể 3",
       "Barem bể 4",
       "Barem bể 5"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3": "Bể 3 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 5": "Bể 5 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_128_BAREM_UPDATE",
@@ -272,7 +405,13 @@
       "Barem bể 2",
       "Barem bể 3",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 ": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3": "Bể 3 - Dầu DO 0.05S-II",
+      "Barem bể 4": "Bể 4 - Dầu Điêzen 0,001S Mức 5"
+    }
   },
   {
     "id": "CHXD_129_BAREM_UPDATE",
@@ -283,7 +422,13 @@
       "Barem bể 2 (DO 0,001)",
       "Barem bể 3 (RON 95V)",
       "Barem bể 4 (RON 95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (DO 0,05)": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 (DO 0,001)": "Bể 2 - Dầu DO 0.001S-V",
+      "Barem bể 3 (RON 95V)": "Bể 3 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 4 (RON 95)": "Bể 4 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_130_BAREM_UPDATE",
@@ -293,7 +438,12 @@
       "Barem bể 1",
       "Barem bể 2 ",
       "Barem bể 3 "
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 ": "Bể 2 - Dầu DO 0.001S-V",
+      "Barem bể 3 ": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_131_BAREM_UPDATE",
@@ -303,7 +453,11 @@
       "Barem bể 1 (RON 95)",
       "Barem bể 2 (DO 0.05)",
       "Barem bể 4 (RON 92)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95)": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 (DO 0.05)": "Bể 2 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_132_BAREM_UPDATE",
@@ -313,7 +467,12 @@
       "Barem bể 1 (DO 0.05)",
       "Barem bể 2 (RON 95V)",
       "Barem bể 4 (RON 95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (DO 0.05)": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 2 (RON 95V)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 4 (RON 95)": "Bể 4 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_133_BAREM_UPDATE",
@@ -324,7 +483,13 @@
       "Barem bể 2 (DO 0,001)",
       "Barem bể 3 (RON 95)",
       "Barem bể 4 (DO 0,05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 92)": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 (DO 0,001)": "Bể 2 - Dầu DO 0.001S-V",
+      "Barem bể 3 (RON 95)": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4 (DO 0,05)": "Bể 4 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_134_BAREM_UPDATE",
@@ -334,7 +499,12 @@
       "Barem bể 2",
       "Barem bể 3",
       "Barem bể 4 "
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4 ": "Bể 4 - Dầu Điêzen 0,001S Mức 5"
+    }
   },
   {
     "id": "CHXD_135_BAREM_UPDATE",
@@ -344,7 +514,12 @@
       "Barem bể 1 (DO 0.05)",
       "Barem bể 2 (Dầu DO 0.001S-V) ",
       "Barem bể 3 (RON 95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (DO 0.05)": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 (Dầu DO 0.001S-V) ": "Bể 2 - Dầu DO 0.001S-V",
+      "Barem bể 3 (RON 95)": "Bể 3 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_136_BAREM_UPDATE",
@@ -355,7 +530,13 @@
       "Barem bể 2",
       "Barem bể 3",
       "Barem bể 4 "
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Dầu DO 0.001S-V",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3": "Bể 3 - Dầu DO 0.05S-II",
+      "Barem bể 4 ": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_137_BAREM_UPDATE",
@@ -365,7 +546,12 @@
       "Barem bể 1",
       "Barem bể 2 ",
       "Barem bể 3 "
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 ": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3 ": "Bể 3 - Dầu DO 0.001S-V"
+    }
   },
   {
     "id": "CHXD_138_BAREM_UPDATE",
@@ -375,7 +561,12 @@
       "Barem bể 1 (RON 95)",
       "Barem bể 2 (RON 95V) ",
       "Barem bể 3 (DO 0.05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95)": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 2 (RON 95V) ": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3 (DO 0.05)": "Bể 3 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_139_BAREM_UPDATE",
@@ -385,7 +576,12 @@
       "Barem bể 1 (Do 0,001)",
       "Barem bể 2 (95)",
       "Barem bể 3 (95V)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (Do 0,001)": "Bể 1 - Dầu DO 0.001S-V",
+      "Barem bể 2 (95)": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3 (95V)": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_140_BAREM_UPDATE",
@@ -397,7 +593,13 @@
       "Barem bể 3",
       "Barem bể 8m3",
       "Barem bể 4m3"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4m3": "Bể 4 - Dầu Do 0.001S-V"
+    }
   },
   {
     "id": "CHXD_141_BAREM_UPDATE",
@@ -407,7 +609,12 @@
       "Barem bể 1 ",
       "Barem bể 2",
       "Barem bể 3 "
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 ": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 3 ": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_142_BAREM_UPDATE",
@@ -417,7 +624,12 @@
       "Barem bể 3",
       "Barem bể 4",
       "Barem bể 5"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 3": "Bể 3 - Dầu DO 0.05S-II",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 5": "Bể 5 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_143_BAREM_UPDATE",
@@ -428,7 +640,12 @@
       "Barem bể 2",
       "Barem bể 3",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Dầu DO 0.001S-V",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_144_BAREM_UPDATE",
@@ -439,7 +656,13 @@
       "Barem bể 2 ",
       "Barem bể 3",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2 ": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 3": "Bể 3 - Dầu DO 0.001S-V",
+      "Barem bể 4": "Bể 4 - Bể 04 Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_145_BAREM_UPDATE",
@@ -450,7 +673,13 @@
       "Barem bể 2 ",
       "Barem bể 3 ",
       "Barem bể 4 "
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 ": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 ": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3 ": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4 ": "Bể 4 - Dầu DO 0.001S-V"
+    }
   },
   {
     "id": "CHXD_146_BAREM_UPDATE",
@@ -460,7 +689,12 @@
       "Barem bể 1",
       "Barem bể 3",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4": "Bể 4 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_147_BAREM_UPDATE",
@@ -470,7 +704,12 @@
       "Barem bể 01 (Do 0,05)",
       "Barem bể 02 (95-III)",
       "Barem bể 03 (E5)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 01 (Do 0,05)": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 02 (95-III)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 03 (E5)": "Bể 3 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_148_BAREM_UPDATE",
@@ -481,7 +720,13 @@
       "Barem bể 2",
       "Barem bể 3",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 3": "Bể 3 - Dầu DO 0.001S-V",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_149_BAREM_UPDATE",
@@ -492,7 +737,13 @@
       "Barem bể 2",
       "Barem bể 3",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3": "Bể 3 - Dầu DO 0.05S-II",
+      "Barem bể 4": "Bể 4 - Dầu Do 0.001S-V"
+    }
   },
   {
     "id": "CHXD_150_BAREM_UPDATE",
@@ -502,7 +753,12 @@
       "Barem bể 1 (DO 0.05) ",
       "Barem bể 2 (RON 95)",
       "Barem bể 3 (RON 95V)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (DO 0.05) ": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 (RON 95)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (RON 95V)": "Bể 3 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_151_BAREM_UPDATE",
@@ -512,7 +768,12 @@
       "Barem bể 1",
       "Barem bể 2",
       "Barem bể 5"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 5": "Bể 5 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_152_BAREM_UPDATE",
@@ -523,7 +784,13 @@
       "Barem bể 2 (95-III)",
       "Barem bể 3",
       "Barem bể 4 (do 0,001)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (Do 0,05)": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 (95-III)": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4 (do 0,001)": "Bể 4 - Dầu Do 0.001S-V"
+    }
   },
   {
     "id": "CHXD_153_BAREM_UPDATE",
@@ -533,7 +800,12 @@
       "Barem bể 1 (95V)",
       "Barem bể 2 (Do 0,05)",
       "Barem bể 3 (95-III)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (95V)": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 (Do 0,05)": "Bể 2 - Dầu DO 0.001S-V",
+      "Barem bể 3 (95-III)": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_154_BAREM_UPDATE",
@@ -542,7 +814,11 @@
     "tanks": [
       "Barem bể 1 (Do 0,05)",
       "Barem bể 2 (95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (Do 0,05)": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 2 (95)": "Bể 2 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_155_BAREM_UPDATE",
@@ -551,7 +827,11 @@
     "tanks": [
       "Barem bể 1 (95)",
       "Barem bể 2 (DO 0,05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (95)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2 (DO 0,05)": "Bể 2 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_156_BAREM_UPDATE",
@@ -561,7 +841,12 @@
       "Barem bể 1",
       "Barem bể 2",
       "Barem bể 3"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2": "Bể 2 - Dầu Do 0.05S-II",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_157_BAREM_UPDATE",
@@ -571,7 +856,12 @@
       "Barem bể 02 (95)",
       "Barem bể 3 (95V)",
       "Barem bể 04 (Do 0,05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 02 (95)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (95V)": "Bể 3 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 04 (Do 0,05)": "Bể 4 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_158_BAREM_UPDATE",
@@ -581,7 +871,12 @@
       "Barem bể 1",
       "Barem bể 2 ",
       "Barem bể 3"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 ": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 3": "Bể 3 - Dầu Điêzen 0,001S Mức 5"
+    }
   },
   {
     "id": "CHXD_159_BAREM_UPDATE",
@@ -591,7 +886,12 @@
       "Barem bể 01 (95-III)",
       "Barem bể 02 (Do 0,05)",
       "Barem bể 03 (95V)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 01 (95-III)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 02 (Do 0,05)": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 03 (95V)": "Bể 3 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_160_BAREM_UPDATE",
@@ -602,7 +902,13 @@
       "Barem bể 2 (95-III)",
       "Barem bể 3 (KO)",
       "Barem bể 4 (DO 0.05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95-V)": "Bể 1 - Dầu Điêzen 0,05S Mức 2",
+      "Barem bể 2 (95-III)": "Bể 2 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 3 (KO)": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4 (DO 0.05)": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_161_BAREM_UPDATE",
@@ -612,7 +918,12 @@
       "Barem bể 1 (RON 95)",
       "Barem bể 2 (RON 95V) ",
       "Barem bể 3 (DO 0.05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2 (RON 95V) ": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (DO 0.05)": "Bể 3 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_162_BAREM_UPDATE",
@@ -623,7 +934,13 @@
       "Barem bể 2",
       "Barem bể 3",
       "Barem bể 4 "
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2": "Bể 2 - Dầu Do 0.001S-V",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4 ": "Bể 4 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_163_BAREM_UPDATE",
@@ -634,7 +951,13 @@
       "Barem bể 2 (95-III)",
       "Barem bể 3 (Do 0,001)",
       "Barem bể 4 "
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (Do 0,05": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 (95-III)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (Do 0,001)": "Bể 3 - Dầu DO 0.001S-V",
+      "Barem bể 4 ": "Bể 4 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_164_BAREM_UPDATE",
@@ -644,7 +967,12 @@
       "Barem bể 01 (95)",
       "Barem bể 02 (95V)",
       "Barem bể 03 (Do 0,05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 01 (95)": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 02 (95V)": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 03 (Do 0,05)": "Bể 3 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_165_BAREM_UPDATE",
@@ -655,7 +983,13 @@
       "Barem bể 2 (DO 0.001)",
       "Barem bể 3 (95V)",
       "Barem bể 4 (DO 0.05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95-III)": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 (DO 0.001)": "Bể 2 - Dầu DO 0.001S-V",
+      "Barem bể 3 (95V)": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4 (DO 0.05)": "Bể 4 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_166_BAREM_UPDATE",
@@ -665,7 +999,12 @@
       "Barem bể 1",
       "Barem bể 2",
       "Barem bể 3 "
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3 ": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_167_BAREM_UPDATE",
@@ -675,7 +1014,12 @@
       "Barem bể 1 ",
       "Barem bể 2 ",
       "Barem bể 3 "
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 ": "Bể 1 - Dầu DO 0,001S-V",
+      "Barem bể 2 ": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 ": "Bể 3 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_168_BAREM_UPDATE",
@@ -685,7 +1029,12 @@
       "Barem bể 01 (95)",
       "Barem bể 02 (Do 0,05)",
       "Barem bể 04 (E5)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 01 (95)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 02 (Do 0,05)": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 04 (E5)": "Bể 4 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_169_BAREM_UPDATE",
@@ -695,7 +1044,12 @@
       "Barem bể 1 (RON 95)",
       "Barem bể 2 (RON 92)",
       "Barem bể 3 (DO 0.001)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2 (RON 92)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (DO 0.001)": "Bể 3 - Dầu Điêzen 0,001S Mức 5"
+    }
   },
   {
     "id": "CHXD_170_BAREM_UPDATE",
@@ -706,7 +1060,12 @@
       "Barem bể 2 (95-III)",
       "Barem bể 3 (DO 0,05)",
       "Barem bể 4 (95-V)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 2 (95-III)": "Bể 2 - Dầu Điêzen 0,05S Mức 2  (CD)",
+      "Barem bể 3 (DO 0,05)": "Bể 3 - Dầu Điêzen 0,001S Mức 5 (Mới)",
+      "Barem bể 4 (95-V)": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_171_BAREM_UPDATE",
@@ -716,7 +1075,12 @@
       "Barem bể 1",
       "Barem bể 2",
       "Barem bể 3"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 5 (NEW)",
+      "Barem bể 3": "Bể 3 - Dầu DO 0,001S-V"
+    }
   },
   {
     "id": "CHXD_172_BAREM_UPDATE",
@@ -726,7 +1090,12 @@
       "Barem bể 1",
       "Barem bể 2 ",
       "Barem bể 3"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 ": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_173_BAREM_UPDATE",
@@ -736,7 +1105,12 @@
       "Barem bể 1 (RON 95V)",
       "Barem bể 2 (RON 95)",
       "Barem bể 4 (DO 0.05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95V)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2 (RON 95)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 4 (DO 0.05)": "Bể 4 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_174_BAREM_UPDATE",
@@ -746,7 +1120,12 @@
       "Barem bể 1 (RON 92)",
       "Barem bể 3 (DO 0.05) ",
       "Barem bể 5 (RON 95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 92)": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 3 (DO 0.05) ": "Bể 3 - Dầu DO 0.05S-II",
+      "Barem bể 5 (RON 95)": "Bể 5 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_175_BAREM_UPDATE",
@@ -756,7 +1135,12 @@
       "Barem bể 1 (RON 95V)",
       "Barem bể 3 (RON 95)",
       "Barem bể 4 (DO 0.05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95V)": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 3 (RON 95)": "Bể 3 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 4 (DO 0.05)": "Bể 4 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_176_BAREM_UPDATE",
@@ -767,7 +1151,13 @@
       "Barem bể 2",
       "Barem bể 3",
       "Barem bể 4 "
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3": "Bể 3 - Dầu DO 0.05S-II",
+      "Barem bể 4 ": "Bể 4 - Dầu Do 0.001S-V"
+    }
   },
   {
     "id": "CHXD_177_BAREM_UPDATE",
@@ -778,7 +1168,13 @@
       "Barem bể 02 (Do 0,05)",
       "Barem bể 03 (95)",
       "Barem bể 04(Do 0,05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 01 (95V)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 02 (Do 0,05)": "Bể 2 - Dầu DO 0.001S-V",
+      "Barem bể 03 (95)": "Bể 3 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 04(Do 0,05)": "Bể 4 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_178_BAREM_UPDATE",
@@ -788,7 +1184,12 @@
       "Barem bể 1 (RON 95V)",
       "Barem bể 3 (DO 0.05) ",
       "Barem bể 6 (RON 95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95V)": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3 (DO 0.05) ": "Bể 3 - Dầu DO 0.05S-II",
+      "Barem bể 6 (RON 95)": "Bể 6 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_179_BAREM_UPDATE",
@@ -799,7 +1200,13 @@
       "Barem bể 02",
       "Barem bể 03",
       "Barem bể 04"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 01": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 02": "Bể 2 - Dầu DO 0.001S-V",
+      "Barem bể 03": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 04": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_180_BAREM_UPDATE",
@@ -811,7 +1218,14 @@
       "Barem bể 3 ",
       "Barem bể 4",
       "Barem bể 5"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 ": "Bể 1 - Dầu DO 0,001S-V",
+      "Barem bể 2 ": "Bể 2 - Xăng E10 RON 95 Mức 5 (NEW)",
+      "Barem bể 3 ": "Bể 3 - Dầu DO 0.05S-II",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 5 (NEW)",
+      "Barem bể 5": "Bể 5 - Xăng E10 RON 95 Mức 5 (NEW)"
+    }
   },
   {
     "id": "CHXD_181_BAREM_UPDATE",
@@ -821,7 +1235,12 @@
       "Barem bể 1 (RON 95)",
       "Barem bể 2 (RON 92)",
       "Barem bể 3 (DO 0.05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2 (RON 92)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (DO 0.05)": "Bể 3 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_182_BAREM_UPDATE",
@@ -832,7 +1251,13 @@
       "Barem bể 2 (95V)",
       "Barem bể 3 ",
       "Barem bể 4 (95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (Do 0,05)": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 (95V)": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3 ": "Bể 3 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 4 (95)": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_183_BAREM_UPDATE",
@@ -843,7 +1268,13 @@
       "Barem bể 2 (Do 0,05)",
       "Barem bể 3 (95V)",
       "Barem bể 4 (Do 0,001)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (95)": "Bể 1 - Xăng E10 Ron 95 Mức 3",
+      "Barem bể 2 (Do 0,05)": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 3 (95V)": "Bể 3 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 4 (Do 0,001)": "Bể 4 - Dầu Do 0.001S-V"
+    }
   },
   {
     "id": "CHXD_184_BAREM_UPDATE",
@@ -854,7 +1285,13 @@
       "Barem bể 2 (DO 0.05)",
       "Barem bể 3 (Do 0,001)",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (95)": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 (DO 0.05)": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 3 (Do 0,001)": "Bể 3 - Dầu DO 0.001S-V",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_185_BAREM_UPDATE",
@@ -864,7 +1301,12 @@
       "Barem bể 1 (RON 95)",
       "Barem bể 2 (RON 92)",
       "Barem bể 3 (DO 0.05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2 (RON 92)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (DO 0.05)": "Bể 3 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_186_BAREM_UPDATE",
@@ -874,7 +1316,12 @@
       "Barem bể 2 (RON 95)",
       "Barem bể 3 (DO 0.05)",
       "Barem bể 4 (Dầu DO 0.001S-V)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 2 (RON 95)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (DO 0.05)": "Bể 3 - Dầu DO 0.05S-II",
+      "Barem bể 4 (Dầu DO 0.001S-V)": "Bể 4 - Dầu DO 0.001S-V"
+    }
   },
   {
     "id": "CHXD_187_BAREM_UPDATE",
@@ -884,7 +1331,12 @@
       "Barem bể 1",
       "Barem bể 2",
       "Barem bể 3 "
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3 ": "Bể 3 - Dầu DO 0.001S-V"
+    }
   },
   {
     "id": "CHXD_188_BAREM_UPDATE",
@@ -894,7 +1346,12 @@
       "Barem bể 1 (RON 92)",
       "Barem bể 2 (DO 0.05)",
       "Barem bể 4 (RON 95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 92)": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 (DO 0.05)": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 4 (RON 95)": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_189_BAREM_UPDATE",
@@ -904,7 +1361,12 @@
       "Barem bể 1",
       "Barem bể 3",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3": "Bể 3 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_190_BAREM_UPDATE",
@@ -914,7 +1376,12 @@
       "Barem bể 1",
       "Barem bể 3 ",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 3 ": "Bể 3 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_191_BAREM_UPDATE",
@@ -925,7 +1392,13 @@
       "Barem bể 2 (RON 95V)",
       "Barem bể 3 (RON 95)",
       "Barem bể 4 (Do 0.001)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (DO 0.05)": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 (RON 95V)": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3 (RON 95)": "Bể 3 - Bể 03- Xăng E10 RON 95 Mức 5",
+      "Barem bể 4 (Do 0.001)": "Bể 4 - Dầu Điêzen 0,001S Mức 5"
+    }
   },
   {
     "id": "CHXD_192_BAREM_UPDATE",
@@ -935,7 +1408,12 @@
       "Barem bể 1 (DO 0.05)",
       "Barem bể 2 (RON 95) ",
       "Barem bể 3 (RON 95V)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (DO 0.05)": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 (RON 95) ": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (RON 95V)": "Bể 3 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_193_BAREM_UPDATE",
@@ -945,7 +1423,12 @@
       "Barem bể 1 (DO 0.05)",
       "Barem bể 2 (95V) ",
       "Barem bể 3 (RON 95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (DO 0.05)": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 (95V) ": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3 (RON 95)": "Bể 3 - Dầu Điêzen 0,001S Mức 5"
+    }
   },
   {
     "id": "CHXD_194_BAREM_UPDATE",
@@ -955,7 +1438,12 @@
       "Barem bể 1",
       "Barem bể 2",
       "Barem bể 3"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2": "Bể 2 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_195_BAREM_UPDATE",
@@ -966,7 +1454,13 @@
       "Barem bể 2 (RON 95-V)",
       "Barem bể 3 (RON 95)",
       "Barem bể 4 (RON 95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (DO 0.05)": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 (RON 95-V)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (RON 95)": "Bể 3 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 4 (RON 95)": "Bể 4 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_196_BAREM_UPDATE",
@@ -976,7 +1470,12 @@
       "Barem bể 1 (RON 95V)",
       "Barem bể 2 (DO 0.05) ",
       "Barem bể 4 (RON 95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95V)": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 (DO 0.05) ": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 4 (RON 95)": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_198_BAREM_UPDATE",
@@ -986,7 +1485,12 @@
       "Barem bể 1 (RON 95)",
       "Barem bể 3 (DO 0.05)",
       "Barem bể 4 (RON 92)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (DO 0.05)": "Bể 3 - Dầu DO 0.05S-II",
+      "Barem bể 4 (RON 92)": "Bể 4 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_199_BAREM_UPDATE",
@@ -997,7 +1501,13 @@
       "Barem bể 2 (95)",
       "Barem bể 3 (DO)",
       "Barem bể 4 (DO)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (E5)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2 (95)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (DO)": "Bể 3 - Dầu DO 0.001S-V",
+      "Barem bể 4 (DO)": "Bể 4 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_200_BAREM_UPDATE",
@@ -1007,7 +1517,12 @@
       "Barem bể 1 (DO 0.05)",
       "Barem bể 2 (Dầu DO 0.001S-V) ",
       "Barem bể 3 (RON 95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (DO 0.05)": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 (Dầu DO 0.001S-V) ": "Bể 2 - Dầu DO 0.001S-V",
+      "Barem bể 3 (RON 95)": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_201_BAREM_UPDATE",
@@ -1017,7 +1532,12 @@
       "Barem bể 01 (Do 0,05)",
       "Barem bể 02 (95)",
       "Barem bể 04 (E5)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 01 (Do 0,05)": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 02 (95)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 04 (E5)": "Bể 4 - Dầu Điêzen 0,001S Mức 5"
+    }
   },
   {
     "id": "CHXD_202_BAREM_UPDATE",
@@ -1027,7 +1547,12 @@
       "Barem bể 1 (RON 92)",
       "Barem bể 2 (RON 95)",
       "Barem bể 3 (DO 0.001)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 92)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2 (RON 95)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (DO 0.001)": "Bể 3 - Dầu DO 0.001S-V"
+    }
   },
   {
     "id": "CHXD_203_BAREM_UPDATE",
@@ -1038,7 +1563,13 @@
       "Barem bể 2 ",
       "Barem bể 3",
       "Barem bể 4 "
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 ": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4 ": "Bể 4 - Dầu DO 0.001S-V"
+    }
   },
   {
     "id": "CHXD_204_BAREM_UPDATE",
@@ -1048,7 +1579,12 @@
       "Barem bể 1 (RON 95)",
       "Barem bể 3 (DO 0.05)",
       "Barem bể 4 (RON 95V)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (RON 95)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (DO 0.05)": "Bể 3 - Dầu DO 0.05S-II",
+      "Barem bể 4 (RON 95V)": "Bể 4 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_205_BAREM_UPDATE",
@@ -1058,7 +1594,12 @@
       "Barem bể 01 (E5)",
       "Barem bể 02 (95)",
       "Barem bể 03 (Do 0,05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 01 (E5)": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 02 (95)": "Bể 2 - Dầu DO 0.001S-V",
+      "Barem bể 03 (Do 0,05)": "Bể 3 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_206_BAREM_UPDATE",
@@ -1068,7 +1609,12 @@
       "Barem bể 1 (DO 0.05)",
       "Barem bể 2 (RON 95V)",
       "Barem bể 3 (RON 95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (DO 0.05)": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 2 (RON 95V)": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3 (RON 95)": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_207_BAREM_UPDATE",
@@ -1079,7 +1625,13 @@
       "Barem bể 2",
       "Barem bể 3 (RON 95)",
       "Barem bể 4 (DO 0.05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (Do 0.001)": "Bể 1 - Dầu Điêzen 0,05S Mức 2",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3 (RON 95)": "Bể 3 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 4 (DO 0.05)": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_208_BAREM_UPDATE",
@@ -1089,7 +1641,12 @@
       "Barem bể 1",
       "Barem bể 2 ",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 ": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_209_BAREM_UPDATE",
@@ -1100,7 +1657,13 @@
       "Barem bể 2",
       "Barem bể 3",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Do 0.05S-II",
+      "Barem bể 2": "Bể 2 - Dầu DO 0.001S-V",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4": "Bể 4 - Bể 04- Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_210_BAREM_UPDATE",
@@ -1111,7 +1674,13 @@
       "Barem bể 2 (Do 0,001)",
       "Barem bể 3 (95V)",
       "Barem bể 4 (95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (Do 0,05)": "Bể 1 - Dầu Do 0.05S-II",
+      "Barem bể 2 (Do 0,001)": "Bể 2 - Dầu Do 0.001S-V",
+      "Barem bể 3 (95V)": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4 (95)": "Bể 4 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_211_BAREM_UPDATE",
@@ -1121,7 +1690,12 @@
       "Barem bể 1 (Do 0,05)",
       "Barem bể 2 (95-V)",
       "Barem bể 3 (95-III)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (Do 0,05)": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 (95-V)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (95-III)": "Bể 3 - Xăng E10 RON 95 Mức 3"
+    }
   },
   {
     "id": "CHXD_212_BAREM_UPDATE",
@@ -1131,7 +1705,12 @@
       "Barem bể 1 (Do 0,05)",
       "Barem bể 2 (E5)",
       "Barem bể 3 (RON 95)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (Do 0,05)": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 (E5)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3 (RON 95)": "Bể 3 - Dầu Điêzen 0,001S Mức 5"
+    }
   },
   {
     "id": "CHXD_213_BAREM_UPDATE",
@@ -1141,7 +1720,12 @@
       "Barem bể 1 (Do 0,05)",
       "Barem bể 2 (95)",
       "Barem bể 3 (95V)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1 (Do 0,05)": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2 (95)": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3 (95V)": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_214_BAREM_UPDATE",
@@ -1151,7 +1735,12 @@
       "Barem bể 1",
       "Barem bể 2",
       "Barem bể 3"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Dầu DO 0.05S-II",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5"
+    }
   },
   {
     "id": "CHXD_215_BAREM_UPDATE",
@@ -1160,7 +1749,11 @@
     "tanks": [
       "Barem bể 3 (95)",
       "Barem bể 4 (Do 0,05)"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 3 (95)": "Bể 3 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 4 (Do 0,05)": "Bể 4 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_216_BAREM_UPDATE",
@@ -1171,7 +1764,13 @@
       "Barem bể 2 ",
       "Barem bể 3",
       "Barem bể 4"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2 ": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 3": "Bể 3 - Dầu DO 0.05S-II",
+      "Barem bể 4": "Bể 4 - Dầu DO 0,001S-V"
+    }
   },
   {
     "id": "CHXD_219_BAREM_FINAL",
@@ -1184,6 +1783,12 @@
       "Barem bể 4",
       "Barem bể 5",
       "Barem bể 6"
-    ]
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 5": "Bể 5 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 6": "Bể 6 - Dầu Điêzen 0,05S Mức 2"
+    }
   }
 ]
