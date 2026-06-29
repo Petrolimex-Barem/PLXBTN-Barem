@@ -769,7 +769,11 @@
             meta.tanks.forEach(tank => {
                 const opt = document.createElement("option");
                 opt.value = tank;
-                opt.innerText = tank;
+                if (meta.tanks_info && meta.tanks_info[tank]) {
+                    opt.innerText = meta.tanks_info[tank];
+                } else {
+                    opt.innerText = tank;
+                }
                 selector.appendChild(opt);
             });
 
