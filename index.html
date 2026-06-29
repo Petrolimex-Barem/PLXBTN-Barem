@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Tra cứu Barem Bồn bể - Petrolimex</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #ff8c00;
+            --primary-hover: #e07b00;
+            --secondary: #0056b3;
+            --dark-bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+            scrollbar-width: thin;
+            scrollbar-color: var(--primary) var(--dark-bg);
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(255, 140, 0, 0.1) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(0, 86, 179, 0.15) 0px, transparent 50%);
+            background-attachment: fixed;
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: white;
+            box-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
+        }
+
+        .logo-text h1 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            background: linear-gradient(to right, #ff8c00, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-text p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        main {
+            flex: 1;
+            max-width: 1200px;
+            width: 100%;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 900px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Glassmorphism Card Style */
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: var(--glass-shadow);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-height: calc(100vh - 120px);
+            position: sticky;
+            top: 90px;
+        }
+
+        @media (max-width: 900px) {
+            .sidebar {
+                max-height: none;
+                position: static;
+            }
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.8rem 1rem 0.8rem 2.5rem;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            color: white;
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .search-box input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 10px rgba(255, 140, 0, 0.2);
+        }
+
+        .search-box svg {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            fill: var(--text-muted);
+        }
+
+        .station-list {
+            flex: 1;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding-right: 5px;
+        }
+
+        .station-item {
+            display: flex;
+            flex-direction: column;
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .station-item:hover {
+            background: rgba(255, 140, 0, 0.05);
+            border-color: rgba(255, 140, 0, 0.2);
+        }
+
+        .station-item.active {
+            background: linear-gradient(135deg, rgba(255, 140, 0, 0.15), rgba(0, 86, 179, 0.15));
+            border-color: var(--primary);
+        }
+
+        .station-item h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .station-item p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .welcome-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 2rem;
+            height: 100%;
+            min-height: 400px;
+        }
+
+        .welcome-card svg {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1.5rem;
+            fill: var(--primary);
+            opacity: 0.8;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .welcome-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .welcome-card p {
+            color: var(--text-muted);
+            max-width: 500px;
+        }
+
+        .detail-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            gap: 1rem;
+        }
+
+        .detail-header-left h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .detail-header-left p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .share-btn {
+            background: rgba(255, 140, 0, 0.1);
+            color: var(--primary);
+            border: 1px solid rgba(255, 140, 0, 0.3);
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+        }
+
+        .share-btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .query-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 600px) {
+            .query-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .input-group label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .input-group select, .input-group input {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            color: white;
+            font-size: 1.1rem;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .input-group select:focus, .input-group input:focus {
+            border-color: var(--primary);
+        }
+
+        .result-card {
+            background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), rgba(0, 86, 179, 0.1));
+            border: 1px solid rgba(255, 140, 0, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .result-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+        }
+
+        .result-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .result-value {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: white;
+            line-height: 1;
+            background: linear-gradient(to right, #ffffff, #e2e8f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .result-unit {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--primary);
+            margin-top: 0.2rem;
+        }
+
+        .interpolation-badge {
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            background: rgba(56, 189, 248, 0.15);
+            color: #38bdf8;
+            padding: 2px 8px;
+            border-radius: 20px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        /* Neighborhood & Table list Styles */
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 1rem;
+            gap: 1rem;
+        }
+
+        .tab {
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+
+        .tab.active {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .neighbor-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 500px) {
+            .neighbor-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .neighbor-cell {
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 0.6rem;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .neighbor-cell.highlight {
+            border-color: var(--primary);
+            background: rgba(255, 140, 0, 0.05);
+        }
+
+        .neighbor-cell .h-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .neighbor-cell .v-val {
+            font-size: 1rem;
+            font-weight: 700;
+            color: white;
+            margin-top: 2px;
+        }
+
+        .table-container {
+            max-height: 350px;
+            overflow-y: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            background: rgba(15, 23, 42, 0.4);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        .data-table th {
+            position: sticky;
+            top: 0;
+            background: #1e293b;
+            padding: 0.8rem 1rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-table td {
+            padding: 0.6rem 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+        }
+
+        .data-table tr:hover td {
+            background: rgba(255, 140, 0, 0.05);
+            color: white;
+        }
+
+        .data-table tr.highlight td {
+            background: rgba(255, 140, 0, 0.1);
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: auto;
+            background: rgba(15, 23, 42, 0.9);
+        }
+
+        .alert-toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #10b981;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+        }
+
+        .alert-toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon">B</div>
+            <div class="logo-text">
+                <h1>Petrolimex</h1>
+                <p>Tra cứu Barem Bồn bể</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sidebar for Station Search & List -->
+        <div class="glass-card sidebar">
+            <div class="search-box">
+                <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                <input type="text" id="station-search" placeholder="Tìm tên hoặc số CHXD...">
+            </div>
+            
+            <div class="station-list" id="station-list">
+                <!-- Station items will be rendered by JS -->
+                <div style="text-align: center; padding: 2rem; color: var(--text-muted);">Đang tải danh sách cửa hàng...</div>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content-area">
+            <div class="glass-card" id="detail-card" style="display: none;">
+                <div class="detail-header">
+                    <div class="detail-header-left">
+                        <h2 id="station-title">Cửa hàng Xăng dầu số 01</h2>
+                        <p id="station-file">Nguồn file: CHXD 01_BAREM_UPDATE 2023.xls</p>
+                    </div>
+                    <button class="share-btn" onclick="copyShareLink()">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
+                        Chia sẻ link
+                    </button>
+                </div>
+
+                <div class="query-grid">
+                    <div class="input-group">
+                        <label for="tank-selector">Chọn Bể (Bồn)</label>
+                        <select id="tank-selector" onchange="onTankChange()"></select>
+                    </div>
+                    <div class="input-group">
+                        <label for="height-input">Chiều cao H (cm)</label>
+                        <input type="number" id="height-input" step="any" min="0" placeholder="Ví dụ: 120 hoặc 120.5" oninput="calculateVolume()">
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-title">Thể tích tương ứng</div>
+                    <div class="result-value" id="result-value">-</div>
+                    <div class="result-unit">LÍT (l)</div>
+                    <div class="interpolation-badge" id="interp-badge" style="display: none;">Giá trị nội suy</div>
+                </div>
+            </div>
+
+            <!-- Context Tabs -->
+            <div class="glass-card" id="data-card" style="display: none; margin-top: 1rem;">
+                <div class="tabs">
+                    <div class="tab active" onclick="switchTab('tab-neighbors')">Các điểm lân cận</div>
+                    <div class="tab" onclick="switchTab('tab-all')">Toàn bộ bảng Barem</div>
+                </div>
+
+                <!-- Tab Neighbors -->
+                <div id="tab-neighbors" class="tab-content active">
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">5 mức chiều cao gần nhất so với giá trị nhập:</p>
+                    <div class="neighbor-grid" id="neighbor-grid"></div>
+                </div>
+
+                <!-- Tab All Data -->
+                <div id="tab-all" class="tab-content">
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Chiều cao (cm)</th>
+                                    <th>Thể tích (Lít)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="barem-table-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Welcome / Placeholder card -->
+            <div class="glass-card welcome-card" id="welcome-card">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                <h2>Tra cứu Barem Bồn bể Xăng dầu</h2>
+                <p>Vui lòng chọn một Cửa hàng Xăng dầu từ danh sách bên trái để bắt đầu tra cứu bảng thể tích bồn chứa.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Hệ thống Tra cứu Barem Bồn bể Petrolimex &copy; 2026. Hỗ trợ nội suy tự động chính xác.</p>
+    </footer>
+
+    <div class="alert-toast" id="toast">
+        <svg width="16" height="16" fill="white" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022z"/></svg>
+        <span>Đã sao chép link chia sẻ vào bộ nhớ tạm!</span>
+    </div>
+
+    <script>
+        let stationsIndex = [];
+        let currentStationId = "";
+        let currentBaremData = null;
+        let activeTab = "tab-neighbors";
+        let dataPrefix = "data/";
+
+        // Load stations index on startup
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("data/stations.json")
+                .then(res => {
+                    if (!res.ok) throw new Error("Fallback to root");
+                    return res.json();
+                })
+                .then(data => {
+                    stationsIndex = data;
+                    renderStationList(stationsIndex);
+                    checkUrlParam();
+                })
+                .catch(err => {
+                    // Fallback to root directory
+                    dataPrefix = "";
+                    fetch("stations.json")
+                        .then(res => {
+                            if (!res.ok) throw new Error("Load failed");
+                            return res.json();
+                        })
+                        .then(data => {
+                            stationsIndex = data;
+                            renderStationList(stationsIndex);
+                            checkUrlParam();
+                        })
+                        .catch(err2 => {
+                            console.error("Error loading stations index:", err2);
+                            document.getElementById("station-list").innerHTML = 
+                                `<div style="text-align: center; padding: 2rem; color: #ef4444;">Lỗi tải dữ liệu. Vui lòng kiểm tra lại.</div>`;
+                        });
+                });
+
+            // Set up search listener
+            document.getElementById("station-search").addEventListener("input", (e) => {
+                const query = e.target.value.toLowerCase().trim();
+                const filtered = stationsIndex.filter(s => 
+                    s.id.toLowerCase().includes(query) || 
+                    s.name.toLowerCase().includes(query)
+                );
+                renderStationList(filtered);
+            });
+        });
+
+        function checkUrlParam() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const stationParam = urlParams.get('station');
+            if (stationParam) {
+                selectStation(stationParam);
+            }
+        }
+
+        function renderStationList(list) {
+            const listContainer = document.getElementById("station-list");
+            if (list.length === 0) {
+                listContainer.innerHTML = `<div style="text-align: center; padding: 2rem; color: var(--text-muted);">Không tìm thấy cửa hàng nào</div>`;
+                return;
+            }
+
+            listContainer.innerHTML = "";
+            list.forEach(item => {
+                const div = document.createElement("div");
+                div.className = `station-item ${item.id === currentStationId ? 'active' : ''}`;
+                div.onclick = () => selectStation(item.id);
+                
+                const cleanId = item.id.replace('CHXD_', 'CHXD ');
+                div.innerHTML = `
+                    <h3>${cleanId}</h3>
+                    <p>${item.name}</p>
+                `;
+                listContainer.appendChild(div);
+            });
+        }
+
+        function selectStation(stationId) {
+            currentStationId = stationId;
+            
+            const items = document.querySelectorAll(".station-item");
+            items.forEach(el => el.classList.remove("active"));
+            
+            const stationIndexObj = stationsIndex.find(s => s.id === stationId);
+            if (!stationIndexObj) return;
+
+            const newUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}?station=${stationId}`;
+            window.history.pushState({ path: newUrl }, '', newUrl);
+
+            fetch(`${dataPrefix}${stationId}.json`)
+                .then(res => res.json())
+                .then(data => {
+                    currentBaremData = data;
+                    showStationDetail(stationIndexObj, data);
+                    renderStationList(stationsIndex);
+                })
+                .catch(err => {
+                    console.error("Error loading station barem:", err);
+                    alert("Không thể tải bảng barem cho cửa hàng này!");
+                });
+        }
+
+        function showStationDetail(meta, baremData) {
+            document.getElementById("welcome-card").style.display = "none";
+            document.getElementById("detail-card").style.display = "block";
+            document.getElementById("data-card").style.display = "block";
+
+            const cleanId = meta.id.replace('CHXD_', 'CHXD ');
+            document.getElementById("station-title").innerText = `${cleanId} - Bảng Tra Barem`;
+            document.getElementById("station-file").innerText = `Nguồn file: ${meta.filename}`;
+
+            // Populate tank dropdown
+            const selector = document.getElementById("tank-selector");
+            selector.innerHTML = "";
+            meta.tanks.forEach(tank => {
+                const opt = document.createElement("option");
+                opt.value = tank;
+                opt.innerText = tank;
+                selector.appendChild(opt);
+            });
+
+            // Set default height and calculate
+            document.getElementById("height-input").value = "";
+            document.getElementById("result-value").innerText = "-";
+            document.getElementById("interp-badge").style.display = "none";
+            
+            onTankChange();
+        }
+
+        function onTankChange() {
+            calculateVolume();
+            renderFullTable();
+        }
+
+        function calculateVolume() {
+            const tank = document.getElementById("tank-selector").value;
+            const inputValStr = document.getElementById("height-input").value;
+            
+            if (!inputValStr || !currentBaremData || !currentBaremData[tank]) {
+                document.getElementById("result-value").innerText = "-";
+                document.getElementById("interp-badge").style.display = "none";
+                renderNeighbors(null);
+                return;
+            }
+
+            const h = parseFloat(inputValStr);
+            const tankData = currentBaremData[tank];
+            
+            // Direct lookup
+            if (tankData[h] !== undefined) {
+                document.getElementById("result-value").innerText = formatNumber(tankData[h]);
+                document.getElementById("interp-badge").style.display = "none";
+                renderNeighbors(h);
+                highlightTableRow(h);
+                return;
+            }
+
+            // Interpolation
+            const sortedHeights = Object.keys(tankData).map(Number).sort((a,b) => a-b);
+            
+            if (h < sortedHeights[0]) {
+                document.getElementById("result-value").innerText = "0";
+                document.getElementById("interp-badge").style.display = "inline-block";
+                document.getElementById("interp-badge").innerText = "Dưới mức giới hạn";
+                renderNeighbors(sortedHeights[0]);
+                return;
+            }
+
+            if (h > sortedHeights[sortedHeights.length - 1]) {
+                document.getElementById("result-value").innerText = formatNumber(tankData[sortedHeights[sortedHeights.length - 1]]);
+                document.getElementById("interp-badge").style.display = "inline-block";
+                document.getElementById("interp-badge").innerText = "Vượt mức tối đa";
+                renderNeighbors(sortedHeights[sortedHeights.length - 1]);
+                return;
+            }
+
+            // Find interval
+            let hLower = sortedHeights[0];
+            let hUpper = sortedHeights[sortedHeights.length - 1];
+
+            for (let i = 0; i < sortedHeights.length - 1; i++) {
+                if (h > sortedHeights[i] && h < sortedHeights[i+1]) {
+                    hLower = sortedHeights[i];
+                    hUpper = sortedHeights[i+1];
+                    break;
+                }
+            }
+
+            const vLower = tankData[hLower];
+            const vUpper = tankData[hUpper];
+
+            // Linear interpolation: V = V_low + (h - h_low) * (V_up - V_low) / (h_up - h_low)
+            const vInterp = vLower + (h - hLower) * (vUpper - vLower) / (hUpper - hLower);
+
+            document.getElementById("result-value").innerText = formatNumber(vInterp.toFixed(1));
+            document.getElementById("interp-badge").style.display = "inline-block";
+            document.getElementById("interp-badge").innerText = `Nội suy giữa ${hLower}cm và ${hUpper}cm`;
+            
+            renderNeighbors(h);
+            highlightTableRow(hLower); // Highlight nearby lower value
+        }
+
+        function renderNeighbors(targetH) {
+            const container = document.getElementById("neighbor-grid");
+            container.innerHTML = "";
+            
+            const tank = document.getElementById("tank-selector").value;
+            if (!tank || !currentBaremData || !currentBaremData[tank]) return;
+            
+            const tankData = currentBaremData[tank];
+            const heights = Object.keys(tankData).map(Number).sort((a,b) => a-b);
+            
+            if (targetH === null) {
+                // Show default first 5 points
+                heights.slice(0, 5).forEach(h => {
+                    container.appendChild(createNeighborCell(h, tankData[h], false));
+                });
+                return;
+            }
+
+            // Find index of target or closest to target
+            let idx = heights.indexOf(targetH);
+            if (idx === -1) {
+                // Not found, find closest index
+                let minDiff = Infinity;
+                for (let i = 0; i < heights.length; i++) {
+                    const diff = Math.abs(heights[i] - targetH);
+                    if (diff < minDiff) {
+                        minDiff = diff;
+                        idx = i;
+                    }
+                }
+            }
+
+            // Get 5 surrounding cells (target in middle if possible)
+            let start = Math.max(0, idx - 2);
+            let end = Math.min(heights.length, start + 5);
+            if (end - start < 5) {
+                start = Math.max(0, end - 5);
+            }
+
+            const visibleHeights = heights.slice(start, end);
+            visibleHeights.forEach(h => {
+                const isExactMatch = h === targetH || (targetH !== null && Math.abs(h - targetH) < 0.5 && !heights.includes(targetH));
+                container.appendChild(createNeighborCell(h, tankData[h], isExactMatch));
+            });
+        }
+
+        function createNeighborCell(h, v, highlight) {
+            const div = document.createElement("div");
+            div.className = `neighbor-cell ${highlight ? 'highlight' : ''}`;
+            div.innerHTML = `
+                <div class="h-label">${h} cm</div>
+                <div class="v-val">${formatNumber(v)} L</div>
+            `;
+            return div;
+        }
+
+        function renderFullTable() {
+            const tbody = document.getElementById("barem-table-body");
+            tbody.innerHTML = "";
+            
+            const tank = document.getElementById("tank-selector").value;
+            if (!tank || !currentBaremData || !currentBaremData[tank]) return;
+            
+            const tankData = currentBaremData[tank];
+            const sortedHeights = Object.keys(tankData).map(Number).sort((a,b) => a-b);
+
+            sortedHeights.forEach(h => {
+                const tr = document.createElement("tr");
+                tr.id = `row-h-${h}`;
+                tr.innerHTML = `
+                    <td>${h}</td>
+                    <td>${formatNumber(tankData[h])}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function highlightTableRow(h) {
+            const rows = document.querySelectorAll("#barem-table-body tr");
+            rows.forEach(r => r.classList.remove("highlight"));
+            
+            const activeRow = document.getElementById(`row-h-${h}`);
+            if (activeRow) {
+                activeRow.classList.add("highlight");
+                // Scroll row into view of container
+                activeRow.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+            }
+        }
+
+        function switchTab(tabId) {
+            activeTab = tabId;
+            document.querySelectorAll(".tab").forEach((t, i) => {
+                t.classList.toggle("active", t.getAttribute("onclick").includes(tabId));
+            });
+            document.querySelectorAll(".tab-content").forEach(c => {
+                c.classList.toggle("active", c.id === tabId);
+            });
+        }
+
+        function formatNumber(num) {
+            return Number(num).toLocaleString('vi-VN');
+        }
+
+        function copyShareLink() {
+            if (!currentStationId) return;
+            const link = `${window.location.protocol}//${window.location.host}${window.location.pathname}?station=${currentStationId}`;
+            navigator.clipboard.writeText(link).then(() => {
+                const toast = document.getElementById("toast");
+                toast.classList.add("show");
+                setTimeout(() => {
+                    toast.classList.remove("show");
+                }, 3000);
+            });
+        }
+    </script>
+</body>
+</html>
