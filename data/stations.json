@@ -1,17 +1,23 @@
 [
   {
     "id": "CHXD_101_BAREM_UPDATE",
-    "name": "CHXD 10101 BAREM UPDATE 2023",
-    "filename": "CHXD 10101_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 101 BAREM 2024",
+    "filename": "CHXD 101_BAREM_2024.xls",
     "tanks": [
       "Barem bể 1",
       "Barem bể 2",
-      "Barem bể 3"
+      "Barem bể 3",
+      "Barem bể 4",
+      "Barem bể 5",
+      "Barem bể 6"
     ],
     "tanks_info": {
       "Barem bể 1": "Bể 1 - Dầu DO 0.05S-II",
       "Barem bể 2": "Bể 2 - Dầu Do 0.001S-V",
-      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5"
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 5": "Bể 5 - Dầu DO 0.05S-II",
+      "Barem bể 6": "Bể 6 - Xăng E10 RON 95 Mức 5"
     }
   },
   {
@@ -141,8 +147,8 @@
   },
   {
     "id": "CHXD_111_BAREM_UPDATE",
-    "name": "CHXD 1111 BAREM UPDATE 2024",
-    "filename": "CHXD 1111_BAREM_UPDATE 2024.xls",
+    "name": "CHXD 111 BAREM UPDATE 2024",
+    "filename": "CHXD 111_BAREM_UPDATE 2024.xls",
     "tanks": [
       "Barem bể 1",
       "Barem bể 2",
