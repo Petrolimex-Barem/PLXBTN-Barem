@@ -545,6 +545,87 @@
             transform: translateY(0);
             opacity: 1;
         }
+
+        /* Mobile Responsive Adjustments */
+        .mobile-back-btn {
+            display: none;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0, 28, 127, 0.05);
+            color: var(--secondary);
+            border: 1px solid rgba(0, 28, 127, 0.15);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-bottom: 1rem;
+            width: fit-content;
+        }
+
+        .mobile-back-btn:hover {
+            background: var(--secondary);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-back-btn {
+                display: flex;
+            }
+            
+            body.show-detail .sidebar {
+                display: none !important;
+            }
+            
+            body.show-detail .content-area {
+                display: flex !important;
+            }
+            
+            body:not(.show-detail) .sidebar {
+                display: flex !important;
+                max-height: none;
+                position: static;
+                width: 100%;
+            }
+            
+            body:not(.show-detail) .content-area {
+                display: none !important;
+            }
+            
+            main {
+                grid-template-columns: 1fr;
+                margin: 1rem auto;
+                padding: 0 1rem;
+            }
+            
+            header {
+                padding: 0.8rem 1rem;
+            }
+            
+            .logo-img {
+                height: 38px;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.05rem;
+            }
+            
+            .logo-text p {
+                font-size: 0.65rem;
+            }
+            
+            .detail-header {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.8rem;
+            }
+            
+            .share-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -576,6 +657,9 @@
 
         <!-- Main Content Area -->
         <div class="content-area">
+            <button class="mobile-back-btn" onclick="mobileShowSidebar()">
+                ← Quay lại danh sách Cửa hàng
+            </button>
             <div class="glass-card" id="detail-card" style="display: none;">
                 <div class="detail-header">
                     <div class="detail-header-left">
@@ -736,6 +820,7 @@
 
         function selectStation(stationId) {
             currentStationId = stationId;
+            document.body.classList.add("show-detail");
             
             const items = document.querySelectorAll(".station-item");
             items.forEach(el => el.classList.remove("active"));
@@ -757,6 +842,10 @@
                     console.error("Error loading station barem:", err);
                     alert("Không thể tải bảng barem cho cửa hàng này!");
                 });
+        }
+
+        function mobileShowSidebar() {
+            document.body.classList.remove("show-detail");
         }
 
         function showStationDetail(meta, baremData) {
