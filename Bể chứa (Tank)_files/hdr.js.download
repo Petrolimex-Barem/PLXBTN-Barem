@@ -1,0 +1,31 @@
+eval(function (p, a, c, k, e, d) { e = function (c) { return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36)) }; if (!''.replace(/^/, String)) { while (c--) { d[e(c)] = k[c] || e(c) } k = [function (e) { return d[e] }]; e = function () { return '\\w+' }; c = 1 }; while (c--) { if (k[c]) { p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]) } } return p }('q 1o(a){e=1H(a);6 c=e.2t||e.2s;6 b=9.r("V");4(b){2x{4(b==c){1b}c=c.2n}2k(c);H()}}q W(){6 d=p("2j");6 f=p("A");6 c=f.n;4(c.o=="s"){H();c.o="J";c.12=21(d)+16;c.1q=2a(d)+2;d.P="../E/2i.U";4(1K()){1Q(f,"1s")}}u{c.o="s";d.P="../E/2l.U";4(9.r("1s")){9.Y.1P(9.r("1s"))}}}q 2m(d,1d){H();6 Q=B("1c");6 w=2o(Q)+(d);4(w<1){w=1d}u{4(w>1d){w=1}}p("D"+Q).n.o="s";p("D"+w).n.o="J";6 A=p("A");4(A){p("19"+Q).v="26";p("19"+w).v="27"}14(i=1;i<=1d;i++){4(i!=w){4(p("D"+i).n.o!="s"){p("D"+i).n.o="s"}4(A){4(A.n.o!="s"){W()}}}}G("1c",w)}q 2y(b){6 a=B("1c");p("D"+a).n.o="s";p("D"+b).n.o="J";p("19"+a).v="26";p("19"+b).v="27";G("1c",b);W()}6 X=2O 2B();q 2M(a){4(2R(a)){F.Z=a;1b}6 b=B("I");4(p("V").n.o!="s"){4(a==b){H();1b}p("1y"+b).v="1N"}G("I",a);4(X[a]!=z){1A(X[a])}u{C("../O/2L.t?Q="+a,29)}}q 29(b){6 c=b.x;4(c=="0"){F.Z="../1g.t"}u{6 a=B("I");X[a]=c;1A(c)}}q 1A(k){1n{2C(9,"1L",1o)}1i(j){}6 g=z;4((g=p("A"))!=z){4(g.n.o!="s"){W()}}6 d=p("V");6 m=B("I");6 f=p("1y"+m);f.v="2G";d.n.12=21(f)+17;d.n.1q=2a(f);d.18="<15 2H=0 2I=0><1r><y 2h=\'2F\'>"+k+"</y><y 2K=12><E P=\'../E/2T.U\' 2h=\'2v\' 2E=\'H()\';></y></1r></15>";4(d.n.o=="s"){d.n.o="N"}6 l;14(6 h=0;h<9.1R.1U;h++){l=9.1R[h].1e;4(l.1G(0,7)=="2q"){4(B("2D"+l)=="s"){1T(l.1G(8,l.1U))}}}4(1K()){1Q(d,"13",11)}}q H(){1n{2J(9,"1L",1o)}1i(d){}6 h=B("I");4(h!=""){6 f;4((f=p("1y"+h))){f.v="1N"}G("I","")}6 b=p("V");4(b.n.o!="s"){b.n.o="s";4(9.r("13")){9.Y.1P(9.r("13"))}}}q 1T(b){S=9.r("2S"+b);1t=9.r("2Q"+b);4(S.n.o=="s"){4(S.18!=""){S.n.o="N"}1t.P="../E/2P.U";G("1O"+b,"N")}u{S.n.o="s";1t.P="../E/2p.U";G("1O"+b,"s")}6 a;4((a=9.r("13"))){a.n.25=(p("V").2A+1)+"2r"}}6 R=2d;q 2z(){4(!R){1V()}u{6 a=9.r("23");6 c=a.1z[a.1f].M;6 b=2w(9.r("28").M);4(c=="-2"){1j("../1I/1D.t?1e=2u&2N="+b,"3f",1k,1u)}u{4(c=="-3"){1j("../1I/1D.t?1e=3O&3N="+b,"3M",1M,1u)}u{1j("../3P/3Q.t?3T="+c+"&3S="+b,"3R",1M,1u)}}}}q 3L(){6 b,a;14(b=1;b<=10;b++){4((a=p("1C"+b))!=z){a.n.o="s"}}C("../O/3K.t",1E)}q 1E(b){6 a=p("1J");a.n.o="N";a.18=b.x;6 c=p("1S#3E#");4(c!=z){c.18="<15 T=1k><1r><y T=34% 1p=1l><b> 3D\\3C \\3F\\3G</b><y T=33% 1p=1l><b>K\\3J 3V\\2U 3I\\3H\\3U</b><y T=33% 1p=1l><b>L\\3W 3Y\\3X</b></15>"}24.1S()}q 3Z(){6 b,a;14(b=1;b<=5;b++){4((a=p("1C"+b))!=z){a.n.o="N"}}p("1J").n.o="s"}6 1m=z;q 3A(b,a){6 d=1H(b);4(!9.r("1h")){4(1F){1n{1F.9.r("1h").M="q 3a 39 38 3b 3c"}1i(c){}}2e(d);1b}4(!1m){C("../20/3B.t"+(a?"?3e=3d":""),2g)}u{4(a){9.r("2c").2f=2d}u{9.r("2c").2f=22}}2e(d)}q 2g(c){4(!1m){4(c.x!="0"){6 b=9.1Y("1W");b.1w=c.x;9.Y.1X(b)}u{F.Z="../1g.t"}}9.r("1h").n.o="s";9.r("37").n.o="J";6 a=9.r("36");a.n.o="J";a.1x()}q 1V(){4(!R){C("../20/2X.t",1Z)}}q 1Z(b){4(!R){4(b.x!="0"){6 a=9.1Y("1W");a.1w=b.x;9.Y.1X(a);R=22}u{F.Z="../1g.t"}}9.r("2W").n.o="s";6 c=9.r("23");c.n.o="J";c.v="2b";9.r("28").1x()}q 2V(a){a.v="2b";2Y(a)}q 2Z(){C("../O/35.t",1a)}q 32(){C("../O/31.t?3g="+9.r("3h").M,1a)}q 3u(){6 a=9.r("3t");C("../O/3s.t?3v="+a.1z[a.1f].M+"&3w="+a.1z[a.1f].1w,1a)}q 1a(a){4(a.x!=""){3z(a.x)}u{F.3y()}}q 3x(){6 a=24.3r("../3q.t","3k","3j=1B,3i=1B,F=1v,3l=1B,3m=1v,3p=1v,12=3o,1q=30,T=1k,25=3n");a.1x()};', 62, 248, '||||if||var|||document||||||||||||||style|display|g_tag|function|getElementById|none|aspx|else|className|ngrp|responseText|td|null|H_grpdiv|readCookie|ajPage|H_m_|img|location|setCookie|collapsemenu|H_dm_grp_id|inline|||value|block|Utils|src|grp|_H_searchinloaded|d2|width|gif|H_dn_mnu|H_showmgrp|hdrdnmenucache|body|href|||top|H_ie6_ifrm|for|table|||innerHTML|H_a_|H_backdateret|return|U_menugrp|cnt|id|selectedIndex|Login|H_shortcutsH|catch|ajdia|700|center|_H_shortcutsactb|try|H_dn_ClickClose|align|left|tr|H_grpdiv_ie6_ifrm|i2|500|yes|text|focus|H_b_|options|expandmenudn|no|printhide|Rpt|H_PrintInfo|parent|substring|evobj|FT|H_printclose|detectie6|click|900|hdrlink|cookie_img_grp_|removeChild|ie6fixifrm|images|print|H_swap|length|H_loadsearchin|script|appendChild|createElement|H_searchinret|utils|elmTop|true|H_searchin|window|height|hdrgrplink|hdrlinkgray|H_searchstr|expandmenuret|elmLeft|hdrbarinputa|H_scnewW|false|cancel_bubble|checked|H_shortcutret|class|HB1Rev|H_HB1|while|HB1|H_shiftmgrp|parentNode|eval|droite|img_grp|px|srcElement|target|CNO|imggo|_formval2NCR|do|H_switchmgrp|H_search|offsetHeight|Array|addEvent|cookie_|onClick|menudropdown|hdrlactive|cellpadding|cellspacing|removeEvent|valign|loaddnmenu|expandmenu|cust|new|bas|img_grp_|isNaN|DN_m_|HB1Rev1|u00C1N|H_thisselect|H_searchinH|loadSearchin|thisselect|H_clrBackdate||Setbackdate|H_setBackdate|||Clearbackdate|H_shortcuts|H_sco|in|available|not|this|context|on|newW|_cnoW|backdate|H_backdate|menubar|toolbar|AYSinfoW|status|scrollbars|480|65|resizable|AYInfo|open|ChangePOS|H_posid|H_changePOS|POS|POSN|H_showU_Info|reload|alert|H_loadsc|loadShortcuts|u00C1M|GI|footer|u0110|u1ED0C|u01AF|TR|u1EBE|ShowPrintInfo|printfriend|_inventoryW|pr|INVENTORY|Search|Searchpage|_searchW|searchstr|searchin|u1EDENG|TO|u1EACP|u1EC2U|BI|printfriendclose'.split('|'), 0, {}))
+function increaseMenuFrequency(menuId, menuName) {
+    const currentUserId = document.getElementById("uidHolder").value;
+    const key = "menuFrequency_" + currentUserId;
+    let freq = JSON.parse(localStorage.getItem(key) || "{}");
+
+    if (!freq[menuId]) {
+        freq[menuId] = { name: menuName, count: 0, id: "" };
+    }
+
+    freq[menuId].count++;
+    localStorage.setItem(key, JSON.stringify(freq));
+}
+
+document.addEventListener("click", function (e) {
+    const t = e.target;
+    if (t.classList.contains("dnMnuLink")) {
+        e.preventDefault();
+        const menuId = t.getAttribute("href");
+        const menuName = t.dataset.menuname;
+        const target = t.getAttribute("target");
+
+        increaseMenuFrequency(menuId, menuName);
+        if (target && target !== "_self") {
+            window.open(menuId, target);
+        } else {
+            window.location.href = menuId;
+        }
+        return;
+    }
+});

@@ -1,0 +1,38 @@
+File exists: True
+Sheets in file: ['TRA CUU', 'Barem bể 1', 'Barem bể 2', 'Barem bể 3']
+
+--- Sheet: TRA CUU ---
+   Unnamed: 0  Unnamed: 1  Unnamed: 2  Unnamed: 3  Unnamed: 4  Unnamed: 5  PETROLIMEX - CỬA HÀNG 01
+0         NaN         NaN         NaN         NaN         NaN         NaN                       NaN
+1         NaN         NaN         NaN         NaN         NaN         NaN                       NaN
+2         NaN         NaN         NaN         NaN         NaN         NaN                       NaN
+3         NaN         NaN         NaN         NaN         NaN         NaN                       NaN
+4         NaN         NaN         NaN         NaN         NaN         NaN                       NaN
+Columns: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'PETROLIMEX - CỬA HÀNG 01']
+
+--- Sheet: Barem bể 1 ---
+  CỬA HÀNG XĂNG DẦU SỐ 1\nBAREM BỂ: 01 Unnamed: 1  Unnamed: 2 Unnamed: 3 Unnamed: 4  Unnamed: 5 Unnamed: 6 Unnamed: 7  Unnamed: 8 Unnamed: 9 Unnamed: 10  Unnamed: 11 Unnamed: 12 Unnamed: 13  Unnamed: 14 Unnamed: 15 Unnamed: 16  Unnamed: 17 Unnamed: 18 Unnamed: 19
+0                                  NaN        NaN         NaN        NaN        NaN         NaN        NaN        NaN         NaN        NaN         NaN          NaN         NaN         NaN          NaN         NaN         NaN          NaN         NaN         NaN
+1                               H (cm)    V (lít)         NaN     H (cm)    V (lít)         NaN     H (cm)    V (lít)         NaN     H (cm)     V (lít)          NaN      H (cm)     V (lít)          NaN      H (cm)     V (lít)          NaN      H (cm)     V (lít)
+2                                    1         33         NaN         21       1088         NaN         41       2810         NaN         61        4932          NaN          81        7316          NaN         101        9834          NaN         121       12447
+3                                    2         61         NaN         22       1162         NaN         42       2910         NaN         62        5045          NaN          82        7439          NaN         102        9962          NaN         122       12580
+4                                    3         89         NaN         23       1235         NaN         43       3010         NaN         63        5159          NaN          83        7563          NaN         103       10091          NaN         123       12713
+Columns: ['CỬA HÀNG XĂNG DẦU SỐ 1\nBAREM BỂ: 01', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 15', 'Unnamed: 16', 'Unnamed: 17', 'Unnamed: 18', 'Unnamed: 19']
+
+--- Sheet: Barem bể 2 ---
+  CỬA HÀNG XĂNG DẦU SỐ 1\nBAREM BỂ: 02 Unnamed: 1  Unnamed: 2 Unnamed: 3 Unnamed: 4  Unnamed: 5 Unnamed: 6 Unnamed: 7  Unnamed: 8 Unnamed: 9 Unnamed: 10  Unnamed: 11 Unnamed: 12 Unnamed: 13  Unnamed: 14 Unnamed: 15 Unnamed: 16  Unnamed: 17 Unnamed: 18 Unnamed: 19
+0                                  NaN        NaN         NaN        NaN        NaN         NaN        NaN        NaN         NaN        NaN         NaN          NaN         NaN         NaN          NaN         NaN         NaN          NaN         NaN         NaN
+1                               H (cm)    V (lít)         NaN     H (cm)    V (lít)         NaN     H (cm)    V (lít)         NaN     H (cm)     V (lít)          NaN      H (cm)     V (lít)          NaN      H (cm)     V (lít)          NaN      H (cm)     V (lít)
+2                                    1         25         NaN         21        833         NaN         41       2525         NaN         61        4659          NaN          81        7034          NaN         101        9570          NaN         121       12207
+3                                    2         44         NaN         22        903         NaN         42       2623         NaN         62        4773          NaN          82        7157          NaN         102        9701          NaN         122       12340
+4                                    3         64         NaN         23        972         NaN         43       2721         NaN         63        4890          NaN          83        7279          NaN         103        9831          NaN         123       12473
+Columns: ['CỬA HÀNG XĂNG DẦU SỐ 1\nBAREM BỂ: 02', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 15', 'Unnamed: 16', 'Unnamed: 17', 'Unnamed: 18', 'Unnamed: 19']
+
+--- Sheet: Barem bể 3 ---
+  CỬA HÀNG XĂNG DẦU SỐ 1\nBAREM BỂ: 03 Unnamed: 1  Unnamed: 2 Unnamed: 3 Unnamed: 4  Unnamed: 5 Unnamed: 6 Unnamed: 7  Unnamed: 8 Unnamed: 9 Unnamed: 10  Unnamed: 11 Unnamed: 12 Unnamed: 13  Unnamed: 14 Unnamed: 15 Unnamed: 16  Unnamed: 17 Unnamed: 18 Unnamed: 19
+0                                  NaN        NaN         NaN        NaN        NaN         NaN        NaN        NaN         NaN        NaN         NaN          NaN         NaN         NaN          NaN         NaN         NaN          NaN         NaN         NaN
+1                               H (cm)    V (lít)         NaN     H (cm)    V (lít)         NaN     H (cm)    V (lít)         NaN     H (cm)     V (lít)          NaN      H (cm)     V (lít)          NaN      H (cm)     V (lít)          NaN      H (cm)     V (lít)
+2                                    1         30         NaN         21       1047         NaN         41       2865         NaN         61        5052          NaN          81        7500          NaN         101       10093          NaN         121       12766
+3                                    2         55         NaN         22       1125         NaN         42       2969         NaN         62        5169          NaN          82        7628          NaN         102       10226          NaN         122       12899
+4                                    3         80         NaN         23       1203         NaN         43       3073         NaN         63        5286          NaN          83        7755          NaN         103       10359          NaN         123       13032
+Columns: ['CỬA HÀNG XĂNG DẦU SỐ 1\nBAREM BỂ: 03', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 15', 'Unnamed: 16', 'Unnamed: 17', 'Unnamed: 18', 'Unnamed: 19']

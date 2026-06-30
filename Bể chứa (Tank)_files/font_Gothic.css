@@ -1,0 +1,19 @@
+BODY{font-family:Century Gothic; font-size:12px;margin:1px;}
+
+input, select, textarea {
+	font-family:Century Gothic;
+	font-size:12px;
+	margin:1px;
+	vertical-align:middle;
+}
+
+TABLE {font-size:13px;}
+TD {font-size:12px;}
+
+.pagetitle {font-size:20px; font-weight:bold;}
+.subtitle {font-size:16px; font-weight:bold;}
+.menuwidth {width:225px;}
+.synchbox {position:relative;top:2px;height:16px;width:260px;}
+
+/* actb */
+.actbfont {font-Size:12px;}

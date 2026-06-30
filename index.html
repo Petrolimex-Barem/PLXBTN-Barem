@@ -759,7 +759,7 @@
             document.getElementById("detail-card").style.display = "block";
             document.getElementById("data-card").style.display = "block";
 
-            const cleanId = meta.id.replace('CHXD_', 'CHXD ');
+            const cleanId = meta.id.replace(/_/g, ' ');
             document.getElementById("station-title").innerText = `${cleanId} - Bảng Tra Barem`;
             document.getElementById("station-file").innerText = `Nguồn file: ${meta.filename}`;
 

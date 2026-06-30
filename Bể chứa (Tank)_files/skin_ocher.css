@@ -1,0 +1,126 @@
+BODY {background-image:url(../Img/bglogon.gif)}
+input, select, textarea {border:1px solid #ccc;border-width:1px 0px 0px 1px;background:#fef;}
+.btn {border-width:1px 1px 1px 1px;border-color:#ddd #988 #988 #ddd;cursor:hand;background:#999;color:white}
+.ch_btn {background:#666;border-width:1px;border-color:#ccc #444 #444 #ccc;cursor:hand;color:white}
+.ironly {pointer-events:none;background:#e6e6e0;text-align:right}
+.synchboxbody {background:#c99;color:#eee}
+
+/* general styles */
+.imggo {vertical-align:middle;cursor:hand;}
+FORM {margin:0px}
+THEAD {display: table-header-group;} /* to printing keeping table header on each page */
+
+/* common link */
+A:link, a:visited {
+	COLOR: #300; TEXT-DECORATION: none;
+}
+A:hover {
+	COLOR: #00c;TEXT-DECORATION: underline;
+}
+A:active {
+	COLOR: #00f; TEXT-DECORATION: none;
+}
+/* general styles */
+.imggo {vertical-align:middle;cursor:hand;}
+FORM {margin:0px}
+THEAD {display: table-header-group;} /* to printing keeping table header on each page */
+
+.pagetitle {color:#300;}
+.subtitle {color:#49f;}
+.inputgray {border:1px solid #C0C0C0}
+.gridhdr {font-weight:bold;background:#ccc;height:25px; text-align:center;color:#222;vertical-align:top}
+.ch_gridhdr {font-weight:bold;background:#bbb;height:21px; text-align:center;color:#000;vertical-align:top}
+.gridamt {background:#e6e6e0;color:black;font-weight:bold;text-align:right;border:1px solid #999;}
+.inputnumber {text-align:right}
+
+/* header bars */
+.hdrbar {background:#c99;border-bottom:1px solid #b88;color:#000;}
+.hdrbarlow {margin-bottom:6px;background-image:url(../img/bg_steel.png);border-top:1px solid #fff;border-bottom:1px solid #e6e6e0;}
+/* inactive inputtextbox */
+.hdrbarinput {background:#a88;border:1px inset #c99;color:#222}
+.hdrbarinputa {background:#dcc;border:1px solid #eee;}
+
+/* links for menu bar */
+.hdrlink {padding:1px 10px 1px 8px;}
+a.hdrlink:link, a.hdrlink:visited {color:#fff;}
+a.hdrlink:hover {color:#633;}
+
+/* menubar's link for active drop down */
+.hdrlactive {padding:1px 10px 1px 8px;background:#4C2C1F;}
+a.hdrlactive:link, a.hdrlactive:visited {color:#fff;}
+
+/* link for profile 'link' at the header */
+.pflink {color:#fff}
+a.pflink:link, a.pflink:visited {color:#fff;}
+
+/* drop down box for select modules at menubar */
+.hdrgrp {background:#fff; border-left:8px solid #ccc;border-top:1px solid #fff; border-right:1px solid #999;}
+.hdrgrplink {color:#33c}
+a.hdrgrplink:link, a.hdrgrplink:visited  {color:#000;}
+
+/* down box for select modules: disabled item */
+.hdrlinkgray {
+	color:#ccc;
+}
+a.hdrlinkgray:link, a.hdrlinkgray:visited  {
+	color:#ccc;
+}
+
+/* div containing dropdown menu */
+/** dropped in header Gen **/
+
+/* drop down menu column */
+.menudropdown {background:#fff;border:2px solid #966;}
+
+/* Drop down menu box */
+.leftColHdr {
+	Padding:4px 1px 3px 5px;background:#966;Border-top:1px solid #c99;Color:#fff;
+	font-size:90%;
+	font-weight:normal;
+	TEXT-TRANSFORM: uppercase;
+}
+.dnMnu {Padding:4px 2px 5px 5px;background:#c99;border-top:1px solid #daa;border-bottom:1px solid #b88;}
+.dnMnuSKey {Padding:4px 2px 5px 0px;background:#c99;border-top:1px solid #daa;border-bottom:1px solid #b88;Color:#000;font-style:italic}
+.dnMnuLink {color:#fff;}
+a.dnMnuLink:link, a.dnMnuLink:visited {color:#4C2C1F;}
+a.dnMnuLink:hover {color:#fff}
+
+/* base table: main dbtab */
+.basetab {border-top:1px solid #ccc;}
+
+/* dbtab odd line bgcolor */
+.basetabol {background:#e6e6e0}
+
+/* edititem <td>left colname */
+.editleftpaneltab {color:#c9c}
+.edititemcol, .ch_edititemcol {text-align:right;}
+.editGrphdr {height:22px;border-bottom:1px solid #333;color:#300}
+.ch_editGrphdr {height:22px;border-bottom:1px solid #333}
+.editchildhdr {border-bottom:4px solid #ddd;padding:2px 2px 2px 0px}
+.editchildlink {background:#ddd;padding:2px 8px 2px 8px;border-right:3px solid #999}
+
+/* calendar, time, date */
+.DoCal {position:absolute; background:#999; border:2px solid #999; padding:2px;}
+
+/* TRX */
+.trhdr {height:25px;font-weight:bold;text-align:center;vertical-align:top}
+.trelmtab {margin-top:2px;border-collapse:collapse}
+.elmtab {background-image:url(../img/trtabGrey.gif);background-repeat:no-repeat;background-position:right;padding:2px 9px 2px 9px;}
+.elmtaba {font-weight:bold;background:#777;padding:2px 9px 2px 9px;}
+a.elmtaba:link, a.elmtaba:visited {color:white;}
+.trtabbottomline {border-bottom:3px solid #777;padding:2px 2px 2px 0px;}
+
+/* Aj browse box */
+.browsebox {z-index:1000;display:none;background:#988;position:absolute;border:#977 solid 1px;padding:3px}
+.browseboxhdr {background:#966;color:white;}
+.browseboxcontent {background:#fff;overflow:auto}
+
+/* actb */
+.actbbox {border:1px dotted #999;}
+
+/* RPT */
+.rpthdr {text-align:center;font-weight:bold}
+.trsum1 {font-weight:bold;TEXT-TRANSFORM:uppercase;background:#d6d6d0}
+.trsum2 {font-weight:bold}
+.trtotal {font-weight:bold}
+.printinput {background:white;border-width:0px 0px 1px 0px;border-bottom:1px solid black;font-weight:bold}

@@ -1,0 +1,16 @@
+CHXD 106 entry in stations.json:
+{'id': 'CHXD_106_BAREM_UPDATE', 'name': 'CHXD 106 BAREM UPDATE 2024', 'filename': 'CHXD 106_BAREM_UPDATE 2024.xls', 'tanks': ['Barem 10m3 (95-95V-Do)', 'Barem 20m3 (Do 0,05)'], 'tanks_info': {}}
+
+CHXD 116 entry in stations.json:
+{'id': 'CHXD_116_BAREM_UPDATE', 'name': 'CHXD 116 BAREM UPDATE 2024', 'filename': 'CHXD 116_BAREM_UPDATE 2024.xls', 'tanks': ['Barem 10m3 (95)', 'Barem 25m3 (Do 0,05)'], 'tanks_info': {}}
+
+HTML entries for 106:
+Bể 01 DO 0,05S-II |  | Dầu Điêzen 0,05S Mức 2 | 2.520,00 | 20.619,00
+Bể 03 - Xăng E10 RON 95 Mức 5 | Bể 3 | Xăng E10 RON 95 Mức 5 | 2.520,00 | 10.340,00
+Bể 02 - Dầu Điêzen 0,001S Mức 5 |  | Dầu Điêzen 0,001S Mức 5 | 2.520,00 | 10.304,00
+Bể 04 - Xăng E10 RON 95 Mức 5 | Bể 4 | Xăng E10 RON 95 Mức 5 | 2.520,00 | 10.304,00
+
+HTML entries for 116:
+Bể 03 - Dầu DO 0.05S-II |  | Dầu Điêzen 0,05S Mức 2 | 2.300,00 | 25.344,00
+Bể 01 - Xăng E10 RON 95 Mức 5 | Bể 1 | Xăng E10 RON 95 Mức 5 | 2.400,00 | 10.405,00
+Bể 02 - Dầu Điêzen 0,001S Mức 5 | Bể 2 | Dầu Điêzen 0,001S Mức 5 | 2.400,00 | 10.405,00

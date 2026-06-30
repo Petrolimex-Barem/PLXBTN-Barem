@@ -1,0 +1,703 @@
+﻿function dbtabkeyhandle(a) {
+    var c = evobj(a);
+    if (c.ctrlKey && ekeyCode(c) == 83) {
+        var b = document.DBtabform;
+        if (document.getElementById("savebtn") != null) {
+            cancel_bubble(c);
+            submitForm(b)
+        }
+    } else {
+        escPage(c)
+    }
+}
+
+function dbtabkeyhandle1(a) {
+    var c = evobj(a);
+    if (c.ctrlKey && ekeyCode(c) == 83) {
+        if (!SysAdminOnly) {
+            cancel_bubble(c);
+            var b = setTimeout("mySubmit()", 100)
+        }
+    } else {
+        escPage(c)
+    }
+}
+
+function submitForm(a) {
+    document.getElementById("savebtn").focus();
+    a.rows.value = tab_n;
+    a.cmd.value = "";
+    a.submit()
+}
+
+function delDBRow() {
+    if (SysAdminOnly) {
+        alert("Disabled!")
+    } else {
+        var a = document.DBtabform;
+        if (confirm("Delete selected rows?")) {
+            a.action = "saveDBTable.aspx";
+            a.cmd.value = "del";
+            a.submit()
+        } else {
+            return false
+        }
+    }
+}
+
+function delDBRowWithReason() {
+    if (SysAdminOnly) {
+        alert("Disabled!");
+        return;
+    }
+
+    var a = document.DBtabform;
+    var reason = "";
+
+    while (true) {
+        reason = prompt("Nhập lý do xóa:");
+
+        if (reason === null) {
+            // Nhấn Cancel
+            return false;
+        }
+
+        reason = reason.trim();
+
+        if (reason === "") {
+            alert("Cần nhập lý do.");
+            continue; // quay lại prompt
+        }
+
+        if (reason.length > 450) {
+            alert("Tối đa 450 ký tự.");
+            continue; // quay lại prompt
+        }
+
+        if (confirm("Delete selected rows?")) {
+            a.action = "saveDBTable.aspx";
+            a.cmd.value = "del";
+            a.reason.value = reason;
+            a.submit()
+        } else {
+            return false
+        }
+        break; // thoát vòng lặp
+    }
+}
+
+function convi10(a) {
+    return a < 10 ? a : "_" + a
+}
+
+function insertTabRow(tab, loadeds) {
+    var FK, dm, dc, i, k, isize, cellc, inputname, inputpart, radioval, radiotext, idefault, elm;
+    var inputdef = document.bosfrm.inputDef?.value || '';
+    var inputdefArr = inputdef.split("^")
+    var celladded = false;
+    dm = document.getElementById(tab).insertRow(1);
+    dc = dm.insertCell(-1);
+    dc.innerHTML = "<input type='hidden' name='Changed" + tab_n + "' value=1>";
+    for (i = 0; i < tab_m; i++) {
+        var syntaxStr = [];
+        if(inputdefArr.length > i){
+            syntaxStr = inputdefArr[i].split(",>");
+        }
+        idefault = (loadeds ? loadeds[i] : inputDefaults[i]);
+        if (inputTypes[i] != "$") {
+            dc = dm.insertCell(-1)
+        }
+        FK = -1;
+        for (k = 0; k < FKs.length; k++) {
+            if (i == FKs[k]) {
+                FK = k;
+                break
+            }
+        }
+        celladded = false;
+        inputname = "'cell" + tab_n + convi10(i) + "'";
+        if (FK != -1 && FKVals[FK] != "") {
+            idefault = (inputTypes[i] == "J" ? FKNames[FK] : FKVals[FK]);
+            cellc = "<input type='hidden' name=" + inputname + " value='" + idefault + "'>";
+            if (inputTypes[i] != "$") {
+                cellc += FKNames[FK]
+            } else {
+                elm = document.createElement("input");
+                elm.type = "hidden";
+                elm.name = "cell" + tab_n + convi10(i);
+                elm.value = idefault;
+                document.DBtabform.appendChild(elm);
+                celladded = true
+            }
+        } else {
+            inputpart = " name=" + inputname + " onkeydown='focusdownitem(event, " + tab_n + "," + (i + 1) + ", -1)'";
+            switch (inputTypes[i]) {
+                case "~":
+                case "&":
+                case "ID":
+                    if (document.DBtabform) {
+                        if (document.DBtabform.tabindex.value == "POS_INFO" && i == 2) {
+                            if (tab_n == 0) {
+                                inputFields[i] = '<option value="1">Bắt đầu hoạt động</option>';
+                            } else {
+                                inputFields[i] = '<option value="2">Hoạt động</option><option value="3">Dừng</option>';
+                            }
+                        }
+                    }
+                    cellc = "<select" + inputpart + ">" + inputFields[i] + "</select>";
+                    break;
+                case "!":
+                    cellc = "<input type='checkbox'" + inputpart + " value='1'" + (idefault != "" ? " checked" : "") + ">";
+                    break;
+                case ":":
+                    radioval = inputSizes[i].split("||");
+                    radiotext = inputFields[i].split("||");
+                    cellc = "";
+                    for (j = 0; j < radioval.length; j++) {
+                        cellc += "<input type='radio'" + inputpart + " value='" + radioval[j] + "'" + (radioval[j] == idefault ? "checked" : "") + ">" + radiotext[j] + " "
+                    }
+                    break;
+                case "$":
+                    elm = document.createElement("input");
+                    elm.type = "hidden";
+                    elm.name = "cell" + tab_n + convi10(i);
+                    elm.value = idefault;
+                    document.DBtabform.appendChild(elm);
+                    celladded = true;
+                    break;
+                case "EXC":
+                    celladded = true;
+                    break;
+                default:
+                    switch (inputTypes[i]) {
+                        case "D":
+                            isize = 9;
+                            break;
+                        case "I":
+                            isize = 8;
+                            break;
+                        case "N":
+                            isize = 16;
+                            break;
+                        case "P":
+                            isize = 4;
+                            break;
+                        case "T":
+                            isize = 4;
+                            break;
+                        case ".":
+                        case "*":
+                        case "J":
+                            isize = inputSizes[i];
+                            break;
+                        default:
+                            isize = 24
+                    }
+                    cellc = "<input" + inputpart + " size=" + isize + " maxlength=" + (isize + 1) + " value='" + idefault + "'";
+                    switch (inputTypes[i]) {
+                        case "D":
+                            cellc += " onBlur='this.value=dateprompt(this);'><img src='../img/browse.gif' class='imggo' onClick=\"DoCal(document.DBtabform.elements[" + inputname + ']);">';
+                            break;
+                        case "O":
+                            cellc += " onBlur='this.value=dateprompt(this, true);'><img src='../img/browse.gif' class='imggo' onClick=\"DoCal(document.DBtabform.elements[" + inputname + '], null, null, 1);">';
+                            break;
+                        case "I":
+                        case "N":
+                            cellc += " style='text-align:right' onChange=\"this.value=insertSepr(this.value);"
+                            if (iifarr(syntaxStr, 6) !== "") {
+                                cellc += `basetabfunc(this, '${iifarr(syntaxStr, 6)}'`;
+                                
+                                if (iifarr(syntaxStr, 7) !== "") {
+                                    cellc += `, '${iifarr(syntaxStr, 7)}', true)`;
+                                } else {
+                                    cellc += ', true)';
+                                }
+                            }                           
+                            else if (iifarr(syntaxStr, 9) !== "") {
+                                cellc += iifarr(syntaxStr, 9);
+                            }
+                            cellc += "\">";
+                            break;
+                        case "J":
+                            cellc += " autocomplete='off'>";
+                            dc.innerHTML = cellc;
+                            new actb(eval("document.DBtabform.elements[" + inputname + "]"), eval("actb" + actbnames[i] + "_text"), "setfocusdownitem(" + tab_n + "," + (i + 1) + ", -1);cancel_bubble(evobj(event));");
+                            celladded = true;
+                            break;
+                        default:
+                            cellc += ">"
+                    }
+            }
+        }
+        if (!celladded) {
+            dc.innerHTML = cellc
+        }
+    }
+    dc = dm.insertCell(-1);
+    dc.innerHTML = "&nbsp;";
+    tab_n += 1;
+    if (parent) {
+        if (parent.iframesize) {
+            try {
+                parent.iframesizeY()
+            } catch (ex) {}
+        }
+    }
+}
+
+function navedit(a) {
+    if (window.jstabindex) {
+        switch (jstabindex) {
+            case "impex":
+                location.href = "ImpEx.aspx?id=" + a;
+                return;
+            case "assets_2":
+                ajdia("editItem.aspx?tabindex=v_assets&" + queryDiff("tabindex") + "&id=" + a + "&noheader=on&childedit=on&followupjsfunc=" + escape("[JS]||location.reload||"), "assetparamsW", 1000, 560);
+                return
+        }
+    }
+    var b = "";
+    if (a != -9) {
+        b = "&id=" + a
+    }
+    location.href = "editItem.aspx?" + queryDiff("id") + b
+}
+
+function basenav(a) {
+    location.href = "?" + a
+}
+
+function markRowChange(a) {
+    document.DBtabform.elements["Changed" + a].value = 1;
+    document.getElementById("trrowid" + a).style.background = "#ffdd99"
+}
+
+function indicateRow(a) {
+    var c;
+    for (var b = 1; b < tab_m; b++) {
+        if ((c = document.DBtabform.elements["cell" + a + convi10(b)])) {
+            c.disabled = true
+        }
+    }
+}
+
+function restoreBgr(a) {
+    var c;
+    for (var b = 1; b < tab_m; b++) {
+        if ((c = document.DBtabform.elements["cell" + a + convi10(b)])) {
+            c.disabled = false
+        }
+    }
+}
+
+function delonclick(a) {
+	if (a == 0 && document.DBtabform && document.DBtabform.tabindex && document.DBtabform.tabindex.value == "POS_INFO" && document.DBtabform.cell02 && document.DBtabform.cell02.value == 1) {
+        try {
+            var d = document.DBtabform.recIDs[a] || document.DBtabform.recIDs;
+            if (d) {
+                d.checked = !d.checked;
+            }
+        } catch (e) {}
+        return false;
+    }
+    var d;
+    try {
+        d = document.DBtabform.recIDs[a]
+    } catch (c) {}
+    if (!d) {
+        d = document.DBtabform.recIDs
+    }
+    var b = document.getElementById("dbtablist");
+    if (d.checked) {
+        b.rows[a + 1].style.background = "#cccccc"
+    } else {
+        b.rows[a + 1].style.background = ""
+    }
+}
+
+function focusdownitem(f, a, b, g) {
+    function d(e, l) {
+        var h = document.DBtabform.elements["cell" + e + convi10(l)];
+        if (h != null) {
+            h.focus()
+        }
+    }
+
+    function c(e, n) {
+        var l;
+        var h = document.DBtabform.elements;
+        if (h["I" + e] != null) {
+            l = h["cell0" + convi10(n)]
+        } else {
+            l = h["cell" + e + convi10(n)]
+        }
+        if (l != null && l.type != "hidden") {
+            try {
+                l.focus()
+            } catch (m) {}
+        }
+    }
+    if (!f) {
+        var f = window.event
+    }
+    switch (ekeyCode(f)) {
+        case 13:
+            if (!f.shiftKey) {
+                setfocusdownitem(a, b, g)
+            }
+            break;
+        case 40:
+            if (inputTypes[b - 1] != "J") {
+                if (g == -1) {
+                    c((a - 1), (b - 1))
+                } else {
+                    d((a + 1), (b - 1))
+                }
+            }
+            break;
+        case 38:
+            if (inputTypes[b - 1] != "J") {
+                if (g == -1) {
+                    c((a + 1), (b - 1))
+                } else {
+                    d((a - 1), (b - 1))
+                }
+            }
+            break
+    }
+}
+
+function setfocusdownitem(a, e, f) {
+    var c;
+    var b = document.DBtabform.elements;
+    c = b["cell" + a + convi10(e)];
+    if (c) {
+        if (c.type != "hidden") {
+            try {
+                c.focus()
+            } catch (d) {}
+        } else {
+            setfocusdownitem(a, (e + 1), f)
+        }
+    } else {
+        if (f == -1 && b["I" + (a + f)]) {
+            c = b.cell01;
+            if (c) {
+                if (c.type != "hidden") {
+                    c.focus()
+                } else {
+                    setfocusdownitem(0, 2, 1)
+                }
+            }
+        } else {
+            c = b["cell" + (a + f) + "1"];
+            if (c) {
+                if (c.type != "hidden") {
+                    c.focus()
+                } else {
+                    setfocusdownitem((a + f), 2, f)
+                }
+            }
+        }
+    }
+}
+function handleBanQuyen(e) {
+    var inputFieldsStr = "";
+    try {
+        var firstSelect;
+		if(document.DBtabform.cell02)
+		{
+			var firstSelect = document.DBtabform.cell02;
+			var hasBDFirst = firstSelect && firstSelect.value == "1";
+			if (firstSelect.name == e) {
+				inputFieldsStr = '<option value="1">Bắt đầu hoạt động</option>';
+			}
+			if (e != firstSelect.name) {
+				inputFieldsStr = '<option value="2">Hoạt động</option><option value="3">Dừng</option>';
+			}
+		}
+    } catch (ex) {
+        inputFieldsStr = "";
+    }
+    return inputFieldsStr;
+}
+function fillOptions(e, c, b, g) {
+    if (document.DBtabform && document.DBtabform.tabindex && document.DBtabform.tabindex.value == "POS_INFO" && c == 3) {
+        var inputFieldsStr = handleBanQuyen(e);
+        if (inputFieldsStr != "") {
+            inputFields[c - 1] = inputFieldsStr;
+        }
+    }
+    var a = document.getElementById("td_" + e);
+    var h = 'value="' + g + '">';
+    var d = 'value="' + g + '" selected>';
+    var f = (inputFields[c - 1].replace(" selected", "")).replace(h, d);
+    a.innerHTML = "<select name='" + e + "' onChange='markRowChange(" + b + ")'>" + f + "</select>"
+}
+
+function showhelp(c, b) {
+    var a = document.getElementById("helpdisp");
+    if (a.style.display == "none") {
+        ajPage("BasetabText.aspx?id=" + c + "&stage=" + b, showhelpret)
+    } else {
+        a.style.display = "none"
+    }
+}
+
+function showhelpret(b) {
+    var a = document.getElementById("helpdisp");
+    a.style.display = "inline";
+    a.innerHTML = b.responseText
+}
+
+function pastehandle(c, d, b) {
+    c.style.display = "none";
+    var a = c.innerHTML;
+    if (d && d.clipboardData && d.clipboardData.getData) {
+        if (/text\/html/.test(d.clipboardData.types)) {
+            c.innerHTML = d.clipboardData.getData("text/html")
+        } else {
+            if (/text\/plain/.test(d.clipboardData.types)) {
+                c.innerHTML = d.clipboardData.getData("text/plain")
+            } else {
+                c.innerHTML = ""
+            }
+        }
+        pastewait(c, a, b);
+        if (d.preventDefault) {
+            d.stopPropagation();
+            d.preventDefault()
+        }
+        return false
+    } else {
+        c.innerHTML = "";
+        pastewait(c, a, b);
+        return true
+    }
+}
+
+function pastewait(c, a, b) {
+    if (c.childNodes && c.childNodes.length > 0) {
+        pasteprocess(c, a, b)
+    } else {
+        that = {
+            e: c,
+            s: a
+        };
+        that.callself = function() {
+            pastewait(that.e, that.s, b)
+        };
+        setTimeout(that.callself, 20)
+    }
+}
+
+function pasteprocess(c, b, l) {
+    var k = ",.,J,>,I,N,P,D,O,T,";
+    try {
+        var f = c.getElementsByTagName("table")[0];
+        var a = f.rows.length;
+        if (a > 500) {
+            a = 500
+        }
+        var g, e, m, d;
+        for (g = a - 1; g >= 0; g--) {
+            insertTabRow("dbtablist");
+            m = f.rows[g];
+            d = m.cells.length;
+            if (d > tab_m) {
+                d = tab_m
+            }
+            for (e = 0; e < d; e++) {
+                let elm = document.DBtabform.elements["cell" + (tab_n - 1) + convi10(e)];
+                let exVal = elmText(m.cells[e]);
+
+                if (k.indexOf("," + inputTypes[e] + ",") >= 0) {
+                    elm.value = exVal;
+                }
+                else if (inputTypes[e] == '!') {
+                    elm.checked = (exVal != '')
+                }
+                else if ((inputTypes[e] == '~' || inputTypes[e] == '&') && elm.type == 'select-one') {
+                    if (checkTextInAnyOptionValue(elm, exVal)) {
+                        elm.value = exVal;
+                    }
+
+                    let idx = checkTextInAnyOptionText(elm, exVal);
+                    if (idx != -1) {
+                        elm.options[idx].selected = true;
+                    }
+                }                
+            }
+        }
+    } catch (h) {
+        alert("Wrong format pasted (IE: links might be problem. Refresh this page!)")
+    }
+    c.style.display = "inline";
+    c.innerHTML = b
+};
+
+function checkTextInAnyOptionValue(selectElement, searchText) {
+    const options = selectElement.options;
+    for (let i = 0; i < options.length; i++) {
+        const option = options[i];
+        if (option.value.includes(searchText)) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function checkTextInAnyOptionText(selectElement, searchText) {
+    const options = selectElement.options;
+    for (let i = 0; i < options.length; i++) {
+        const option = options[i];
+        if (option.text.startsWith(searchText)) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+function basetabcell(row, col) {
+    const frm = document.DBtabform;
+    return frm.elements[`cell${row}${col > 9 ? '_' + col : col}`];
+}
+
+function basetabfunc(el, func, params, sync) {
+    const frm = document.DBtabform;
+    const name = el.name.replace('cell', '');
+    const [row, col] = name.includes('_') ? name.split('_') : [name.slice(0, -1), name.slice(-1)];
+
+    let inputCols = [], targetCol = '';
+    if (params?.includes('=>')) {
+        [inputCols, targetCol] = params.split('=>').map(p => p.trim());
+        inputCols = inputCols.split('||');
+    } else {
+        inputCols = params ? params.split('||') : [col];
+        targetCol = col;
+    }
+
+    const vals = inputCols.map(c => {
+        let v = basetabcell(row, c)?.value || 0;
+        return (isNumeric(v) || isNumericNeg(v)) ? removeSepr(v) : 0;
+    }).join(';');
+
+    const q = `dbtab=${frm.tabindex.value}&row=${row}&col=${col}&targetcol=${targetCol}&params=${params}&vals=${vals}`;
+    ajPage(`${func}.aspx`, r => eval(r.responseText), q, sync);
+}
+
+function iifarr(arr, index) {
+    return (Array.isArray(arr) && arr[index] !== undefined) ? arr[index] : "";
+}
+function validatePOSInfoForm() {
+    var f = document.DBtabform;
+    if (!f || !f.tabindex || f.tabindex.value !== "POS_INFO") return true;
+
+    var table = document.getElementById("dbtablist");
+    if (!table) return true;
+
+    var allRows = table.querySelectorAll(
+        ":scope > thead > tr, :scope > tbody > tr"
+    );
+    var rows = [];
+    for (var i = 0; i < allRows.length; i++) {
+        var tr = allRows[i];
+
+        var directInputs = tr.querySelectorAll(
+            ":scope > td input[name^='cell']"
+        );
+
+        if (directInputs.length > 0) {
+            rows.push(tr);
+        }
+    }
+
+    if (rows.length === 0) return true;
+
+    var ordered = [];
+
+    for (var i = 0; i < rows.length; i++) {
+        if (rows[i].querySelector(":scope > td input[name^='I']")) {
+            ordered.push(rows[i]);
+        }
+    }
+    for (var i = 0; i < rows.length; i++) {
+        if (!rows[i].querySelector(":scope > td input[name^='I']")) {
+            ordered.push(rows[i]);
+        }
+    }
+
+    // Các cột cần kiểm tra
+    var cols = [
+        { idx: 3, label: "Phần mềm" },
+        { idx: 4, label: "Cột bơm" },
+        { idx: 5, label: "Đo bể" },
+        { idx: 6, label: "Tủ AGAS Controller" },
+        { idx: 7, label: "POS" }
+    ];
+
+    clearHighlight(table);
+
+    var prev = {};
+
+    for (var r = 0; r < ordered.length; r++) {
+        var tr = ordered[r];
+        var hasDate = false;
+
+        for (var c = 0; c < cols.length; c++) {
+            var col = cols[c];
+            var input = tr.querySelector(":scope > td input[name^='cell'][name$='" + col.idx + "']");
+            if (!input) continue;
+
+            var val = input.value.trim();
+            if (!val) continue;
+
+            hasDate = true;
+
+            if (prev[col.idx] && !isDateGreater(val, prev[col.idx])) {
+                highlight(input);
+                alert(
+                    'Ngày bắt đầu tại cột "' + col.label +
+                    '" của dòng ' + (r + 1) +
+                    ' phải lớn hơn dòng trước'
+                );
+                input.focus();
+                return false;
+            }
+
+            prev[col.idx] = val;
+        }
+
+        if (!hasDate) {
+            highlight(tr);
+            alert(
+                "Dòng " + (r + 1) +
+                " phải nhập ngày bắt đầu của ít nhất 1 loại bản quyền"
+            );
+            return false;
+        }
+    }
+
+    return true;
+}
+function highlight(el) {
+    el.style.border = "2px solid red";
+    el.style.backgroundColor = "#ffecec";
+}
+
+function clearHighlight(table) {
+    var inputs = table.querySelectorAll("input[name^='cell']");
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].style.border = "";
+        inputs[i].style.backgroundColor = "";
+    }
+}
+function isDateGreater(d1, d2) {
+    var p1 = d1.split("/");
+    var p2 = d2.split("/");
+
+    var t1 = new Date(p1[2], p1[1] - 1, p1[0]).getTime();
+    var t2 = new Date(p2[2], p2[1] - 1, p2[0]).getTime();
+
+    return t1 > t2;
+}
