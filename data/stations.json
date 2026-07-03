@@ -36,6 +36,15 @@
     }
   },
   {
+    "id": "CHXD_103_BAREM",
+    "name": "CHXD 103 BAREM 2024",
+    "filename": "CHXD 103_BAREM_2024.xls",
+    "tanks": [
+      "Barem bể"
+    ],
+    "tanks_info": {}
+  },
+  {
     "id": "CHXD_104_BAREM",
     "name": "CHXD 104 BAREM UPDATE 2023",
     "filename": "CHXD 104_BAREM_UPDATE 2023.xls",
@@ -50,8 +59,8 @@
   },
   {
     "id": "CHXD_105_BAREM",
-    "name": "CHXD 105 BAREM UPDATE 2023",
-    "filename": "CHXD 105_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 105 BAREM UPDATE 2026",
+    "filename": "CHXD 105_BAREM_UPDATE 2026.xls",
     "tanks": [
       "Barem bể 1",
       "Barem bể 2",
@@ -71,17 +80,10 @@
     "name": "CHXD 106 BAREM UPDATE 2024",
     "filename": "CHXD 106_BAREM_UPDATE 2024.xls",
     "tanks": [
-      "Barem bể 1",
-      "Barem bể 2",
-      "Barem bể 3",
-      "Barem bể 4"
+      "Barem 10m3 (95-95V-Do)",
+      "Barem 20m3 (Do 0,05)"
     ],
-    "tanks_info": {
-      "Barem bể 1": "Bể 1 - Dầu DO 0.05S-II",
-      "Barem bể 2": "Bể 2 - Dầu Điêzen 0,001S Mức 5",
-      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
-      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 5"
-    }
+    "tanks_info": {}
   },
   {
     "id": "CHXD_107_BAREM",
@@ -183,8 +185,8 @@
   },
   {
     "id": "CHXD_113_BAREM",
-    "name": "CHXD 113 BAREM UPDATE 2023",
-    "filename": "CHXD 113_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 113 BAREM UPDATE 2026",
+    "filename": "CHXD 113_BAREM_UPDATE 2026.xls",
     "tanks": [
       "Barem bể 1",
       "Barem bể 2",
@@ -237,47 +239,44 @@
     "name": "CHXD 116 BAREM UPDATE 2024",
     "filename": "CHXD 116_BAREM_UPDATE 2024.xls",
     "tanks": [
-      "Barem bể 1",
-      "Barem bể 2",
-      "Barem bể 3"
+      "Barem 10m3 (95)",
+      "Barem 25m3 (Do 0,05)"
     ],
-    "tanks_info": {
-      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
-      "Barem bể 2": "Bể 2 - Dầu Điêzen 0,001S Mức 5",
-      "Barem bể 3": "Bể 3 - Dầu DO 0.05S-II"
-    }
+    "tanks_info": {}
   },
   {
     "id": "CHXD_117_BAREM",
-    "name": "CHXD 117 BAREM UPDATE 2023",
-    "filename": "CHXD 117_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 117 BAREM NEW",
+    "filename": "CHXD 117_BAREM_NEW.xls",
     "tanks": [
-      "Barem bể 01",
-      "Barem bể 02",
-      "Barem bể 03"
+      "BỂ 1 25K",
+      "BỂ 2 25K",
+      "BỂ 3 25K",
+      "BỂ 4 25K"
     ],
     "tanks_info": {
-      "Barem bể 01": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
-      "Barem bể 02": "Bể 2 - Xăng E10 RON 95 Mức 5",
-      "Barem bể 03": "Bể 3 - Dầu Điêzen 0,05S Mức 2"
+      "BỂ 1 25K": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
+      "BỂ 2 25K": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "BỂ 3 25K": "Bể 3 - Dầu Điêzen 0,05S Mức 2",
+      "BỂ 4 25K": "Bể 4 - Xăng E10 RON 95 Mức 5"
     }
   },
   {
     "id": "CHXD_118_BAREM",
-    "name": "CHXD 118 BAREM UPDATE 2023",
-    "filename": "CHXD 118_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 118 BAREM UPDATE 2026",
+    "filename": "CHXD 118_BAREM_UPDATE 2026.xls",
     "tanks": [
-      "Barem bể 1 (DO 0.001)",
-      "Barem bể 2 (DO 0.05)",
-      "Barem bể 3 (RON 92)",
-      "Barem bể 4 (RON 95)",
-      "Barem bể 5 (RON 95)"
+      "Barem bể 1",
+      "Barem bể 2",
+      "Barem bể 3",
+      "Barem bể 4",
+      "Barem bể 5"
     ],
     "tanks_info": {
-      "Barem bể 1 (DO 0.001)": "Bể 1 - Dầu DO 0.001S-V",
-      "Barem bể 2 (DO 0.05)": "Bể 2 - Dầu DO 0.05S-II",
-      "Barem bể 4 (RON 95)": "Bể 4 - Xăng E10 RON 95 Mức 5 (NEW)",
-      "Barem bể 5 (RON 95)": "Bể 5 - Xăng E10 RON 95 Mức 5 (NEW)"
+      "Barem bể 1": "Bể 1 - Dầu DO 0.001S-V",
+      "Barem bể 2": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 5 (NEW)",
+      "Barem bể 5": "Bể 5 - Xăng E10 RON 95 Mức 5 (NEW)"
     }
   },
   {
@@ -346,15 +345,15 @@
   },
   {
     "id": "CHXD_123_BAREM",
-    "name": "CHXD 123 BAREM UPDATE 2023",
-    "filename": "CHXD 123_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 123 BAREM UPDATE 2026",
+    "filename": "CHXD 123_BAREM_UPDATE 2026.xls",
     "tanks": [
       "Barem bể 01 (Do 0,05)",
       "Barem bể 01 (95-III)",
-      "Barem bể 02 (E5)"
+      "Barem bể 02 (E10)"
     ],
     "tanks_info": {
-      "Barem bể 02 (E5)": "Bể 2 - Xăng E10 RON 95 Mức 3"
+      "Barem bể 02 (E10)": "Bể 2 - Xăng E10 RON 95 Mức 3"
     }
   },
   {
@@ -375,6 +374,15 @@
     }
   },
   {
+    "id": "CHXD_125_BAREM",
+    "name": "CHXD 125 BAREM 2024",
+    "filename": "CHXD 125_BAREM_2024.xls",
+    "tanks": [
+      "Barem bể"
+    ],
+    "tanks_info": {}
+  },
+  {
     "id": "CHXD_126_BAREM",
     "name": "CHXD 126 BAREM UPDATE 2023",
     "filename": "CHXD 126_BAREM_UPDATE 2023.xls",
@@ -391,8 +399,8 @@
   },
   {
     "id": "CHXD_127_BAREM",
-    "name": "CHXD 127 BAREM UPDATE 2023",
-    "filename": "CHXD 127_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 127 BAREM UPDATE 2026",
+    "filename": "CHXD 127_BAREM_UPDATE 2026.xls",
     "tanks": [
       "Barem bể 1",
       "Barem bể 2",
@@ -473,15 +481,15 @@
   },
   {
     "id": "CHXD_132_BAREM",
-    "name": "CHXD 132 BAREM UPDATE 2024",
-    "filename": "CHXD 132_BAREM_UPDATE 2024.xls",
+    "name": "CHXD 132 BAREM UPDATE 2026",
+    "filename": "CHXD 132_BAREM_UPDATE 2026.xls",
     "tanks": [
-      "Barem bể 1 (DO 0.05)",
+      "Barem bể 1 (DO 0.001)",
       "Barem bể 2 (RON 95V)",
       "Barem bể 4 (RON 95)"
     ],
     "tanks_info": {
-      "Barem bể 1 (DO 0.05)": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 1 (DO 0.001)": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
       "Barem bể 2 (RON 95V)": "Bể 2 - Xăng E10 RON 95 Mức 3",
       "Barem bể 4 (RON 95)": "Bể 4 - Xăng E10 RON 95 Mức 3"
     }
@@ -505,8 +513,8 @@
   },
   {
     "id": "CHXD_134_BAREM",
-    "name": "CHXD 134 BAREM UPDATE 2023",
-    "filename": "CHXD 134_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 134 BAREM UPDATE 2026",
+    "filename": "CHXD 134_BAREM_UPDATE 2026.xls",
     "tanks": [
       "Barem bể 2",
       "Barem bể 3",
@@ -695,8 +703,8 @@
   },
   {
     "id": "CHXD_146_BAREM",
-    "name": "CHXD 146 BAREM UPDATE 2023",
-    "filename": "CHXD 146_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 146 BAREM UPDATE 2026",
+    "filename": "CHXD 146_BAREM_UPDATE 2026.xls",
     "tanks": [
       "Barem bể 1",
       "Barem bể 3",
@@ -759,23 +767,25 @@
   },
   {
     "id": "CHXD_150_BAREM",
-    "name": "CHXD 150 BAREM UPDATE 2024",
-    "filename": "CHXD 150_BAREM_UPDATE 2024.xls",
+    "name": "CHXD 150 BAREM UPDATE 2026",
+    "filename": "CHXD 150_BAREM_UPDATE 2026.xls",
     "tanks": [
       "Barem bể 1 (DO 0.05) ",
       "Barem bể 2 (RON 95)",
-      "Barem bể 3 (RON 95V)"
+      "Barem bể 3 (RON 95V)",
+      "Barem bể 4"
     ],
     "tanks_info": {
       "Barem bể 1 (DO 0.05) ": "Bể 1 - Dầu DO 0.05S-II",
       "Barem bể 2 (RON 95)": "Bể 2 - Xăng E10 RON 95 Mức 3",
-      "Barem bể 3 (RON 95V)": "Bể 3 - Xăng E10 RON 95 Mức 3"
+      "Barem bể 3 (RON 95V)": "Bể 3 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 4": "Bể 4 - Dầu Điêzen 0,001S Mức 5"
     }
   },
   {
     "id": "CHXD_151_BAREM",
-    "name": "CHXD 151 BAREM UPDATE 2023",
-    "filename": "CHXD 151_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 151 BAREM UPDATE 2026",
+    "filename": "CHXD 151_BAREM_UPDATE 2026.xls",
     "tanks": [
       "Barem bể 1",
       "Barem bể 2",
@@ -821,27 +831,27 @@
   },
   {
     "id": "CHXD_154_BAREM",
-    "name": "CHXD 154 BAREM UPDATE 2023",
-    "filename": "CHXD 154_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 154 BAREM UPDATE 2026",
+    "filename": "CHXD 154_BAREM_UPDATE 2026.xls",
     "tanks": [
-      "Barem bể 1 (Do 0,05)",
+      "Barem bể 1 (Do 0,001)",
       "Barem bể 2 (95)"
     ],
     "tanks_info": {
-      "Barem bể 1 (Do 0,05)": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 1 (Do 0,001)": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
       "Barem bể 2 (95)": "Bể 2 - Xăng E10 RON 95 Mức 3"
     }
   },
   {
     "id": "CHXD_155_BAREM",
-    "name": "CHXD 155 BAREM UPDATE 2023",
-    "filename": "CHXD 155_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 155 BAREM UPDATE 2026",
+    "filename": "CHXD 155_BAREM_UPDATE 2026.xls",
     "tanks": [
-      "Barem bể 1 (95)",
+      "Barem bể 1 (E10)",
       "Barem bể 2 (DO 0,05)"
     ],
     "tanks_info": {
-      "Barem bể 1 (95)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 1 (E10)": "Bể 1 - Xăng E10 RON 95 Mức 3",
       "Barem bể 2 (DO 0,05)": "Bể 2 - Dầu DO 0.05S-II"
     }
   },
@@ -862,14 +872,16 @@
   },
   {
     "id": "CHXD_157_BAREM",
-    "name": "CHXD 157 BAREM UPDATE 2024",
-    "filename": "CHXD 157_BAREM_UPDATE 2024.xls",
+    "name": "CHXD 157 BAREM UPDATE 2026",
+    "filename": "CHXD 157_BAREM_UPDATE 2026.xls",
     "tanks": [
+      "Barem bể 1",
       "Barem bể 02 (95)",
       "Barem bể 3 (95V)",
       "Barem bể 04 (Do 0,05)"
     ],
     "tanks_info": {
+      "Barem bể 1": "Bể 1 - Dầu DO 0.001S-V",
       "Barem bể 02 (95)": "Bể 2 - Xăng E10 RON 95 Mức 3",
       "Barem bể 3 (95V)": "Bể 3 - Xăng E10 RON 95 Mức 3",
       "Barem bể 04 (Do 0,05)": "Bể 4 - Dầu DO 0.05S-II"
@@ -907,19 +919,24 @@
   },
   {
     "id": "CHXD_160_BAREM",
-    "name": "CHXD 160 BAREM UPDATE 2023",
-    "filename": "CHXD 160_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 160 BAREM 2025 (7 Bể)",
+    "filename": "CHXD 160_BAREM_2025 (7 Bể).xls",
     "tanks": [
-      "Barem bể 1 (RON 95-V)",
-      "Barem bể 2 (95-III)",
-      "Barem bể 3 (KO)",
-      "Barem bể 4 (DO 0.05)"
+      "Bể1",
+      "Bể 2",
+      "Bể 3",
+      "Bể 4",
+      "Bể 5",
+      "Bể 6",
+      "Bể 7"
     ],
     "tanks_info": {
-      "Barem bể 1 (RON 95-V)": "Bể 1 - Dầu Điêzen 0,05S Mức 2",
-      "Barem bể 2 (95-III)": "Bể 2 - Dầu Điêzen 0,001S Mức 5",
-      "Barem bể 3 (KO)": "Bể 3 - Xăng E10 RON 95 Mức 5",
-      "Barem bể 4 (DO 0.05)": "Bể 4 - Xăng E10 RON 95 Mức 5"
+      "Bể 2": "Bể 2 - Dầu Điêzen 0,001S Mức 5",
+      "Bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Bể 4": "Bể 4 - Xăng E10 RON 95 Mức 5",
+      "Bể 5": "Bể 5 - Xăng E10 RON 95 Mức 5",
+      "Bể 6": "Bể 6 - Dầu Điêzen 0,001S Mức 5",
+      "Bể 7": "Bể 7 - Xăng E10 RON 95 Mức 5"
     }
   },
   {
@@ -1035,31 +1052,33 @@
   },
   {
     "id": "CHXD_168_BAREM",
-    "name": "CHXD 168 BAREM UPDATE 2023",
-    "filename": "CHXD 168_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 168 BAREM UPDATE 2026",
+    "filename": "CHXD 168_BAREM_UPDATE 2026.xls",
     "tanks": [
-      "Barem bể 01 (95)",
-      "Barem bể 02 (Do 0,05)",
-      "Barem bể 04 (E5)"
+      "Barem bể 01",
+      "Barem bể 02",
+      "Barem bể 03 ",
+      "Barem bể 04"
     ],
     "tanks_info": {
-      "Barem bể 01 (95)": "Bể 1 - Xăng E10 RON 95 Mức 3",
-      "Barem bể 02 (Do 0,05)": "Bể 2 - Dầu DO 0.05S-II",
-      "Barem bể 04 (E5)": "Bể 4 - Xăng E10 RON 95 Mức 3"
+      "Barem bể 01": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 02": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 03 ": "Bể 3 - Dầu DO 0.001S-V",
+      "Barem bể 04": "Bể 4 - Xăng E10 RON 95 Mức 3"
     }
   },
   {
     "id": "CHXD_169_BAREM",
-    "name": "CHXD 169 BAREM UPDATE 2025",
-    "filename": "CHXD 169_BAREM_UPDATE 2025.xls",
+    "name": "CHXD 169 BAREM UPDATE 2026",
+    "filename": "CHXD 169_BAREM_UPDATE 2026.xls",
     "tanks": [
       "Barem bể 1 (RON 95)",
-      "Barem bể 2 (RON 92)",
+      "Barem bể 2 (E10)",
       "Barem bể 3 (DO 0.001)"
     ],
     "tanks_info": {
       "Barem bể 1 (RON 95)": "Bể 1 - Xăng E10 RON 95 Mức 3",
-      "Barem bể 2 (RON 92)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2 (E10)": "Bể 2 - Xăng E10 RON 95 Mức 3",
       "Barem bể 3 (DO 0.001)": "Bể 3 - Dầu Điêzen 0,001S Mức 5"
     }
   },
@@ -1096,45 +1115,49 @@
   },
   {
     "id": "CHXD_172_BAREM",
-    "name": "CHXD 172 BAREM UPDATE 2023",
-    "filename": "CHXD 172_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 172 BAREM UPDATE 2025",
+    "filename": "CHXD 172_BAREM_UPDATE 2025.xls",
     "tanks": [
       "Barem bể 1",
       "Barem bể 2 ",
-      "Barem bể 3"
+      "Barem bể 3",
+      "Barem bể 4"
     ],
     "tanks_info": {
       "Barem bể 1": "Bể 1 - Dầu DO 0.05S-II",
       "Barem bể 2 ": "Bể 2 - Xăng E10 RON 95 Mức 5",
-      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5"
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 4": "Bể 4 - Dầu Điêzen 0,001S Mức 5"
     }
   },
   {
     "id": "CHXD_173_BAREM",
-    "name": "CHXD 173 BAREM UPDATE 2024",
-    "filename": "CHXD 173_BAREM_UPDATE 2024.xls",
+    "name": "CHXD 173 BAREM UPDATE 2026",
+    "filename": "CHXD 173_BAREM_UPDATE 2026.xls",
     "tanks": [
-      "Barem bể 1 (RON 95V)",
-      "Barem bể 2 (RON 95)",
-      "Barem bể 4 (DO 0.05)"
+      "Barem bể 1",
+      "Barem bể 2",
+      "Barem bể 3",
+      "Barem bể 4"
     ],
     "tanks_info": {
-      "Barem bể 1 (RON 95V)": "Bể 1 - Xăng E10 RON 95 Mức 3",
-      "Barem bể 2 (RON 95)": "Bể 2 - Xăng E10 RON 95 Mức 3",
-      "Barem bể 4 (DO 0.05)": "Bể 4 - Dầu DO 0.05S-II"
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3": "Bể 3 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 4": "Bể 4 - Dầu DO 0.05S-II"
     }
   },
   {
     "id": "CHXD_174_BAREM",
-    "name": "CHXD 174 BAREM UPDATE 2023",
-    "filename": "CHXD 174_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 174 BAREM UPDATE 2026",
+    "filename": "CHXD 174_BAREM_UPDATE 2026.xls",
     "tanks": [
-      "Barem bể 1 (RON 92)",
+      "Barem bể 1 (E10)",
       "Barem bể 3 (DO 0.05) ",
       "Barem bể 5 (RON 95)"
     ],
     "tanks_info": {
-      "Barem bể 1 (RON 92)": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
+      "Barem bể 1 (E10)": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
       "Barem bể 3 (DO 0.05) ": "Bể 3 - Dầu DO 0.05S-II",
       "Barem bể 5 (RON 95)": "Bể 5 - Xăng E10 RON 95 Mức 3"
     }
@@ -1241,17 +1264,17 @@
   },
   {
     "id": "CHXD_181_BAREM",
-    "name": "CHXD 181 BAREM UPDATE 2023",
-    "filename": "CHXD 181_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 181 BAREM UPDATE 2026",
+    "filename": "CHXD 181_BAREM_UPDATE 2026.xls",
     "tanks": [
-      "Barem bể 1 (RON 95)",
-      "Barem bể 2 (RON 92)",
-      "Barem bể 3 (DO 0.05)"
+      "Barem bể 1",
+      "Barem bể 2",
+      "Barem bể 3"
     ],
     "tanks_info": {
-      "Barem bể 1 (RON 95)": "Bể 1 - Xăng E10 RON 95 Mức 3",
-      "Barem bể 2 (RON 92)": "Bể 2 - Xăng E10 RON 95 Mức 3",
-      "Barem bể 3 (DO 0.05)": "Bể 3 - Dầu DO 0.05S-II"
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3": "Bể 3 - Dầu DO 0.05S-II"
     }
   },
   {
@@ -1367,8 +1390,8 @@
   },
   {
     "id": "CHXD_189_BAREM",
-    "name": "CHXD 189 BAREM UPDATE 2023",
-    "filename": "CHXD 189_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 189 BAREM UPDATE 2026",
+    "filename": "CHXD 189_BAREM_UPDATE 2026.xls",
     "tanks": [
       "Barem bể 1",
       "Barem bể 3",
@@ -1490,18 +1513,35 @@
     }
   },
   {
-    "id": "CHXD_198_BAREM",
-    "name": "CHXD 198 BAREM UPDATE 2024",
-    "filename": "CHXD 198_BAREM_UPDATE 2024.xls",
+    "id": "CHXD_197_BAREM",
+    "name": "CHXD 197 BAREM UPDATE 2025",
+    "filename": "CHXD 197_BAREM_UPDATE 2025.xls",
     "tanks": [
-      "Barem bể 1 (RON 95)",
-      "Barem bể 3 (DO 0.05)",
-      "Barem bể 4 (RON 92)"
+      "Barem bể 1",
+      "Barem bể 2",
+      "Barem bể 3",
+      "barem bể 4"
     ],
     "tanks_info": {
-      "Barem bể 1 (RON 95)": "Bể 1 - Xăng E10 RON 95 Mức 3",
-      "Barem bể 3 (DO 0.05)": "Bể 3 - Dầu DO 0.05S-II",
-      "Barem bể 4 (RON 92)": "Bể 4 - Xăng E10 RON 95 Mức 3"
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Barem bể 2": "Bể 2 - Dầu DO 0.05S-II",
+      "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "barem bể 4": "Bể 4 - Dầu Điêzen 0,001S Mức 5"
+    }
+  },
+  {
+    "id": "CHXD_198_BAREM",
+    "name": "CHXD 198 BAREM UPDATE 2026",
+    "filename": "CHXD 198_BAREM_UPDATE 2026.xls",
+    "tanks": [
+      "Barem bể 1",
+      "Barem bể 3",
+      "Barem bể 4"
+    ],
+    "tanks_info": {
+      "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 3": "Bể 3 - Dầu DO 0.05S-II",
+      "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 3"
     }
   },
   {
@@ -1553,15 +1593,15 @@
   },
   {
     "id": "CHXD_202_BAREM",
-    "name": "CHXD 202 BAREM UPDATE 2023",
-    "filename": "CHXD 202_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 202 BAREM UPDATE 2026",
+    "filename": "CHXD 202_BAREM_UPDATE 2026.xls",
     "tanks": [
-      "Barem bể 1 (RON 92)",
+      "Barem bể 1 (E10)",
       "Barem bể 2 (RON 95)",
       "Barem bể 3 (DO 0.001)"
     ],
     "tanks_info": {
-      "Barem bể 1 (RON 92)": "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 1 (E10)": "Bể 1 - Xăng E10 RON 95 Mức 3",
       "Barem bể 2 (RON 95)": "Bể 2 - Xăng E10 RON 95 Mức 3",
       "Barem bể 3 (DO 0.001)": "Bể 3 - Dầu DO 0.001S-V"
     }
@@ -1630,19 +1670,21 @@
   },
   {
     "id": "CHXD_207_BAREM",
-    "name": "CHXD 207 BAREM UPDATE 2023",
-    "filename": "CHXD 207_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 207 BAREM 2026 (6 Bể)",
+    "filename": "CHXD 207_BAREM_2026 (6 Bể).xls",
     "tanks": [
-      "Barem bể 1 (Do 0.001)",
-      "Barem bể 2",
-      "Barem bể 3 (RON 95)",
-      "Barem bể 4 (DO 0.05)"
+      "Bể 1 15K",
+      "Bể 2 15K",
+      "Bể 3 20K",
+      "Bể 4 20K",
+      "Bể 5 15K",
+      "Bể 6 15K"
     ],
     "tanks_info": {
-      "Barem bể 1 (Do 0.001)": "Bể 1 - Dầu Điêzen 0,05S Mức 2",
-      "Barem bể 2": "Bể 2 - Xăng E10 RON 95 Mức 5",
-      "Barem bể 3 (RON 95)": "Bể 3 - Dầu Điêzen 0,001S Mức 5",
-      "Barem bể 4 (DO 0.05)": "Bể 4 - Xăng E10 RON 95 Mức 5"
+      "Bể 1 15K": "Bể 1 - Dầu Điêzen 0,05S Mức 2",
+      "Bể 2 15K": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Bể 3 20K": "Bể 3 - Dầu Điêzen 0,001S Mức 5",
+      "Bể 4 20K": "Bể 4 - Xăng E10 RON 95 Mức 5"
     }
   },
   {
@@ -1711,16 +1753,16 @@
   },
   {
     "id": "CHXD_212_BAREM",
-    "name": "CHXD 212 BAREM UPDATE 2023",
-    "filename": "CHXD 212_BAREM_UPDATE 2023.xls",
+    "name": "CHXD 212 BAREM UPDATE 2026",
+    "filename": "CHXD 212_BAREM_UPDATE 2026.xls",
     "tanks": [
       "Barem bể 1 (Do 0,05)",
-      "Barem bể 2 (E5)",
+      "Barem bể 2 (E10)",
       "Barem bể 3 (RON 95)"
     ],
     "tanks_info": {
       "Barem bể 1 (Do 0,05)": "Bể 1 - Dầu DO 0.05S-II",
-      "Barem bể 2 (E5)": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Barem bể 2 (E10)": "Bể 2 - Xăng E10 RON 95 Mức 3",
       "Barem bể 3 (RON 95)": "Bể 3 - Dầu Điêzen 0,001S Mức 5"
     }
   },

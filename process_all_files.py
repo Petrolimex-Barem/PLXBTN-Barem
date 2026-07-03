@@ -84,9 +84,10 @@ def parse_barem_sheet(xl, sheet_name):
         h_idxes = []
         v_idxes = []
         for c_idx, val in enumerate(row_vals):
-            if 'height' in val or 'h (cm)' in val or 'h (mm)' in val or '(h)' in val or val == 'h' or 'c.m' in val:
+            val_clean = val.replace(" ", "")
+            if 'height' in val_clean or 'h(cm)' in val_clean or 'h(mm)' in val_clean or '(h)' in val_clean or val_clean == 'h' or 'c.m' in val_clean:
                 h_idxes.append(c_idx)
-            elif 'volume' in val or 'v (lít)' in val or 'v (l)' in val or '(v)' in val or val == 'v' or 'l.í' in val or 'lít' in val or 'lit' in val:
+            elif 'volume' in val_clean or 'v(lít)' in val_clean or 'v(lit)' in val_clean or 'v(l)' in val_clean or '(v)' in val_clean or val_clean == 'v' or 'l.í' in val_clean or 'lít' in val_clean or 'lit' in val_clean:
                 v_idxes.append(c_idx)
                 
         if len(h_idxes) > 0 and len(v_idxes) > 0:
@@ -156,36 +157,19 @@ def main():
     files = [f for f in os.listdir('.') if f.endswith(('.xls', '.xlsx', '.xlsm')) and f.startswith("CHXD")]
     files.sort(key=lambda x: [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', x)])
     
-    stations_list = []
+    stations_dict = {}
+    
+    def get_file_year(fname):
+        match = re.search(r'(202\d)', fname)
+        return int(match.group(1)) if match else 0
     
     for idx, filename in enumerate(files):
         old_num = clean_station_id(filename)
+        new_num = old_num
         
-        # Determine new store ID
-        if old_num == "219":
-            new_num = "219"
-        else:
-            # Map old number to new number
-            new_num = mappings.get(old_num)
-            if not new_num:
-                # try stripped zeros
-                alt_num = old_num.lstrip('0') if old_num.startswith('0') else '0' + old_num
-                new_num = mappings.get(alt_num)
-                
-            if not new_num:
-                # Store is closed (like 5 or 129), skip it!
-                print(f"Skipping closed store ({idx+1}/{len(files)}): {filename}")
-                continue
-                
         # Generate new file ID and station name
         new_station_id = f"CHXD_{new_num}_BAREM"
-            
-        # Clean replacement of the CHXD prefix to avoid double replacement
-        if f"CHXD {old_num}" in filename:
-            new_filename = filename.replace(f"CHXD {old_num}", f"CHXD {new_num}")
-        else:
-            old_num_int = str(int(old_num)) if old_num.isdigit() else old_num
-            new_filename = filename.replace(f"CHXD {old_num_int}", f"CHXD {new_num}")
+        new_filename = filename
             
         new_station_name = new_filename.split('.')[0].replace('_', ' ')
         new_station_name = re.sub(r'\s+', ' ', new_station_name).strip()
@@ -215,74 +199,44 @@ def main():
                     station_data[sheet] = tank_data
             
             if station_data:
-                # Custom duplication logic for CHXD 106 and 116 to match all physical tanks
+                final_station_data = station_data
                 tanks_info = {}
-                final_station_data = {}
+                for tank_sheet in station_data.keys():
+                    sheet_num_match = re.search(r'b[eể]\s+0*(\d+)', tank_sheet, re.IGNORECASE)
+                    if sheet_num_match:
+                        sheet_num = sheet_num_match.group(1)
+                        if new_num in tank_mappings and sheet_num in tank_mappings[new_num]:
+                            tanks_info[tank_sheet] = f"Bể {sheet_num} - {tank_mappings[new_num][sheet_num]}"
                 
-                if new_num == "106":
-                    # Barem 20m3 (Do 0,05) -> Bể 1
-                    # Barem 10m3 (95-95V-Do) -> Bể 2, Bể 3, Bể 4
-                    barem_20 = station_data.get("Barem 20m3 (Do 0,05)")
-                    barem_10 = station_data.get("Barem 10m3 (95-95V-Do)")
-                    
-                    if barem_20:
-                        final_station_data["Barem bể 1"] = barem_20
-                    if barem_10:
-                        final_station_data["Barem bể 2"] = barem_10
-                        final_station_data["Barem bể 3"] = barem_10
-                        final_station_data["Barem bể 4"] = barem_10
-                        
-                    tanks_info = {
-                        "Barem bể 1": "Bể 1 - Dầu DO 0.05S-II",
-                        "Barem bể 2": "Bể 2 - Dầu Điêzen 0,001S Mức 5",
-                        "Barem bể 3": "Bể 3 - Xăng E10 RON 95 Mức 5",
-                        "Barem bể 4": "Bể 4 - Xăng E10 RON 95 Mức 5"
-                    }
-                elif new_num == "116":
-                    # Barem 10m3 (95) -> Bể 1, Bể 2
-                    # Barem 25m3 (Do 0,05) -> Bể 3
-                    barem_10 = station_data.get("Barem 10m3 (95)")
-                    barem_25 = station_data.get("Barem 25m3 (Do 0,05)")
-                    
-                    if barem_10:
-                        final_station_data["Barem bể 1"] = barem_10
-                        final_station_data["Barem bể 2"] = barem_10
-                    if barem_25:
-                        final_station_data["Barem bể 3"] = barem_25
-                        
-                    tanks_info = {
-                        "Barem bể 1": "Bể 1 - Xăng E10 RON 95 Mức 5",
-                        "Barem bể 2": "Bể 2 - Dầu Điêzen 0,001S Mức 5",
-                        "Barem bể 3": "Bể 3 - Dầu DO 0.05S-II"
-                    }
-                else:
-                    final_station_data = station_data
-                    # Match using parsed tank mappings
-                    for tank_sheet in station_data.keys():
-                        sheet_num_match = re.search(r'bể\s+0*(\d+)', tank_sheet, re.IGNORECASE)
-                        if sheet_num_match:
-                            sheet_num = sheet_num_match.group(1)
-                            if new_num in tank_mappings and sheet_num in tank_mappings[new_num]:
-                                tanks_info[tank_sheet] = f"Bể {sheet_num} - {tank_mappings[new_num][sheet_num]}"
+                # Check if we already processed a newer version of this station
+                current_year = get_file_year(filename)
+                existing_station = stations_dict.get(new_station_id)
+                if existing_station:
+                    existing_year = get_file_year(existing_station["filename"])
+                    if current_year < existing_year:
+                        print(f"  Skipping older duplicate file: {filename} (year: {current_year} < existing: {existing_year})")
+                        continue
                 
-                # Write individual json data using new_station_id
-                with open(f"data/{new_station_id}.json", "w", encoding="utf-8") as f:
-                    json.dump(final_station_data, f, ensure_ascii=False, indent=2)
+                # Write individual json data
+                with open(f"data/{new_station_id}.json", "w", encoding="utf-8") as f_out:
+                    json.dump(final_station_data, f_out, ensure_ascii=False, indent=2)
                 
-                stations_list.append({
+                stations_dict[new_station_id] = {
                     "id": new_station_id,
                     "name": new_station_name,
                     "filename": new_filename,
                     "tanks": list(final_station_data.keys()),
                     "tanks_info": tanks_info
-                })
-                print(f"  Success: Parsed {len(final_station_data)} tanks")
+                }
+                print(f"  Success: Parsed {len(final_station_data)} tanks (year: {current_year})")
             else:
                 print(f"  Warning: No barem data found in {filename}")
         except Exception as e:
             print(f"  Error processing {filename}: {e}")
             
     # Sort updated stations naturally by new ID number
+    stations_list = list(stations_dict.values())
+    
     def get_station_num(s):
         match = re.search(r'CHXD_([A-Za-z0-9]+)_', s["id"])
         if not match:
