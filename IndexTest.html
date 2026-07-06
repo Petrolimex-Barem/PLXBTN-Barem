@@ -194,13 +194,21 @@
         }
 
         .station-item.active h3 {
-            color: var(--secondary);
+            color: var(--secondary) !important;
         }
 
         .station-item h3 {
             font-size: 0.95rem;
             font-weight: 700;
-            color: var(--text-main);
+        }
+
+        /* Alternate colors for store numbers */
+        .station-list .station-item:nth-child(odd) h3 {
+            color: var(--secondary);
+        }
+
+        .station-list .station-item:nth-child(even) h3 {
+            color: var(--primary);
         }
 
         .station-item p {
@@ -831,7 +839,7 @@
                 div.className = `station-item ${item.id === currentStationId ? 'active' : ''}`;
                 div.onclick = () => selectStation(item.id);
                 
-                const cleanId = item.id.replace('CHXD_', 'CHXD ');
+                const cleanId = item.id.replace('CHXD_', 'CHXD ').replace('_BAREM', '');
                 div.innerHTML = `
                     <h3>${cleanId}</h3>
                     <p>${item.name}</p>
