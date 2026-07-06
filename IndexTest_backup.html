@@ -622,31 +622,6 @@
                 width: 100%;
                 justify-content: center;
             }
-
-            .station-list {
-                display: grid !important;
-                grid-template-columns: repeat(3, 1fr) !important;
-                gap: 0.4rem !important;
-                padding-right: 0 !important;
-            }
-            
-            .station-item {
-                padding: 0.5rem 0.2rem !important;
-                align-items: center !important;
-                justify-content: center !important;
-                text-align: center !important;
-                border-radius: 6px !important;
-            }
-            
-            .station-item h3 {
-                font-size: 0.8rem !important;
-                margin: 0 !important;
-                line-height: 1.2 !important;
-            }
-            
-            .station-item p {
-                display: none !important;
-            }
         }
     </style>
 </head>
@@ -843,7 +818,6 @@
         function selectStation(stationId) {
             currentStationId = stationId;
             document.body.classList.add("show-detail");
-            window.scrollTo(0, 0);
             
             const items = document.querySelectorAll(".station-item");
             items.forEach(el => el.classList.remove("active"));
@@ -869,7 +843,6 @@
 
         function mobileShowSidebar() {
             document.body.classList.remove("show-detail");
-            window.scrollTo(0, 0);
         }
 
         function showStationDetail(meta, baremData) {
