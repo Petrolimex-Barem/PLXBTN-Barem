@@ -547,31 +547,24 @@
         }
 
         /* Mobile Responsive Adjustments */
-        .mobile-back-btn {
+        .mobile-back-arrow {
             display: none;
-            align-items: center;
-            gap: 6px;
-            background: rgba(0, 28, 127, 0.05);
-            color: var(--secondary);
-            border: 1px solid rgba(0, 28, 127, 0.15);
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            font-size: 0.85rem;
-            font-weight: 700;
             cursor: pointer;
-            transition: all 0.2s;
-            margin-bottom: 1rem;
-            width: fit-content;
+            color: var(--primary);
+            margin-right: 8px;
+            font-weight: 800;
+            font-size: 1.4rem;
+            vertical-align: middle;
+            transition: transform 0.2s;
         }
-
-        .mobile-back-btn:hover {
-            background: var(--secondary);
-            color: white;
+        
+        .mobile-back-arrow:active {
+            transform: scale(0.85);
         }
 
         @media (max-width: 768px) {
-            .mobile-back-btn {
-                display: flex;
+            .mobile-back-arrow {
+                display: inline-block;
             }
             
             body.show-detail .sidebar {
@@ -659,13 +652,13 @@
 
         <!-- Main Content Area -->
         <div class="content-area">
-            <button class="mobile-back-btn" onclick="mobileShowSidebar()">
-                ← Quay lại danh sách Cửa hàng
-            </button>
             <div class="glass-card" id="detail-card" style="display: none;">
                 <div class="detail-header">
                     <div class="detail-header-left">
-                        <h2 id="station-title">Cửa hàng Xăng dầu số 01</h2>
+                        <h2 style="display: flex; align-items: center; gap: 8px;">
+                            <span class="mobile-back-arrow" onclick="mobileShowSidebar()">←</span>
+                            <span id="station-title">Cửa hàng Xăng dầu số 01</span>
+                        </h2>
                         <p id="station-file">Nguồn file: CHXD 01_BAREM_UPDATE 2023.xls</p>
                     </div>
                     <button class="share-btn" onclick="copyShareLink()">
