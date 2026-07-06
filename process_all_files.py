@@ -127,6 +127,9 @@ def parse_barem_sheet(xl, sheet_name):
         if use_mm_conversion:
             h_num = h_num / 10.0
             
+        if v_num == 0 and h_num > 10:
+            continue
+            
         if h_num.is_integer():
             h_num = int(h_num)
         else:
@@ -196,6 +199,8 @@ def main():
                     continue
                 tank_data = parse_barem_sheet(xl, sheet)
                 if tank_data:
+                    if new_num == "145" and ("bể 2" in sheet.lower() or "be 2" in sheet.lower()):
+                        tank_data = {k: v for k, v in tank_data.items() if float(k) <= 172}
                     station_data[sheet] = tank_data
             
             if station_data:
