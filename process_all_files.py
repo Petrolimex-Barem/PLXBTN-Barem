@@ -87,7 +87,7 @@ def parse_barem_sheet(xl, sheet_name):
             val_clean = val.replace(" ", "")
             if 'height' in val_clean or 'h(cm)' in val_clean or 'h(mm)' in val_clean or '(h)' in val_clean or val_clean == 'h' or 'c.m' in val_clean:
                 h_idxes.append(c_idx)
-            elif 'volume' in val_clean or 'v(lít)' in val_clean or 'v(lit)' in val_clean or 'v(l)' in val_clean or '(v)' in val_clean or val_clean == 'v' or 'l.í' in val_clean or 'lít' in val_clean or 'lit' in val_clean:
+            elif ('volume' in val_clean or 'v(lít)' in val_clean or 'v(lit)' in val_clean or 'v(l)' in val_clean or '(v)' in val_clean or val_clean == 'v' or 'l.í' in val_clean or 'lít' in val_clean or 'lit' in val_clean) and '/' not in val_clean:
                 v_idxes.append(c_idx)
                 
         if len(h_idxes) > 0 and len(v_idxes) > 0:
