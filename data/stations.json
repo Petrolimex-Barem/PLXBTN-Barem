@@ -139,16 +139,16 @@
     "name": "CHXD 110 BAREM UPDATE 2024",
     "filename": "CHXD 110_BAREM_UPDATE 2024.xls",
     "tanks": [
-      "Barem bể 1 (RON 95)",
-      "Barem bể 2 (DO 0.05)",
-      "Barem bể 3 (RON 95V)",
-      "Barem bể 4 (Dầu DO)"
+      "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Bể 2 - Bể 02- Dầu DO 0.05S-II",
+      "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Bể 4 - Dầu Do 0.001S-V"
     ],
     "tanks_info": {
-      "Barem bể 1 (RON 95)": "Bể 1 - Xăng E10 RON 95 Mức 5",
-      "Barem bể 2 (DO 0.05)": "Bể 2 - Bể 02- Dầu DO 0.05S-II",
-      "Barem bể 3 (RON 95V)": "Bể 3 - Xăng E10 RON 95 Mức 5",
-      "Barem bể 4 (Dầu DO)": "Bể 4 - Dầu Do 0.001S-V"
+      "Bể 1 - Xăng E10 RON 95 Mức 5": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Bể 2 - Bể 02- Dầu DO 0.05S-II": "Bể 2 - Bể 02- Dầu DO 0.05S-II",
+      "Bể 3 - Xăng E10 RON 95 Mức 5": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Bể 4 - Dầu Do 0.001S-V": "Bể 4 - Dầu Do 0.001S-V"
     }
   },
   {
