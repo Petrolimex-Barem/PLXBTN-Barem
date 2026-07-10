@@ -240,10 +240,15 @@
     "name": "CHXD 116 BAREM UPDATE 2024",
     "filename": "CHXD 116_BAREM_UPDATE 2024.xls",
     "tanks": [
-      "Barem 10m3 (95)",
-      "Barem 25m3 (Do 0,05)"
+      "Bể 01 - Xăng E10 RON 95 Mức 5",
+      "Bể 02 - Dầu Điêzen 0,001S Mức 5",
+      "Bể 03 - Dầu DO 0.05S-II"
     ],
-    "tanks_info": {}
+    "tanks_info": {
+      "Bể 01 - Xăng E10 RON 95 Mức 5": "Bể 01 - Xăng E10 RON 95 Mức 5",
+      "Bể 02 - Dầu Điêzen 0,001S Mức 5": "Bể 02 - Dầu Điêzen 0,001S Mức 5",
+      "Bể 03 - Dầu DO 0.05S-II": "Bể 03 - Dầu DO 0.05S-II"
+    }
   },
   {
     "id": "CHXD_117_BAREM",
