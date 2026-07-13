@@ -1659,16 +1659,18 @@
   {
     "id": "CHXD_205_BAREM",
     "name": "CHXD 205 BAREM UPDATE 2023",
-    "filename": "CHXD 205_BAREM_UPDATE 2023.xls",
+    "filename": "CHXD 205_BAREM_2024.xls",
     "tanks": [
-      "Bể 1 - Dầu DO 0.05S-II",
-      "Bể 2 - Dầu DO 0.001S-V",
-      "Bể 3 - Xăng E10 RON 95 Mức 3"
+      "Bể 01 - Dầu DO 0.05S-II",
+      "Bể 02 - Dầu DO 0.001S-V",
+      "Bể 03 - Xăng E10 RON 95 Mức 3",
+      "Bể 04 - Xăng E10 RON 95 Mức 3"
     ],
     "tanks_info": {
-      "Bể 1 - Dầu DO 0.05S-II": "Bể 1 - Dầu DO 0.05S-II",
-      "Bể 2 - Dầu DO 0.001S-V": "Bể 2 - Dầu DO 0.001S-V",
-      "Bể 3 - Xăng E10 RON 95 Mức 3": "Bể 3 - Xăng E10 RON 95 Mức 3"
+      "Bể 01 - Dầu DO 0.05S-II": "Bể 01 - Dầu DO 0.05S-II",
+      "Bể 02 - Dầu DO 0.001S-V": "Bể 02 - Dầu DO 0.001S-V",
+      "Bể 03 - Xăng E10 RON 95 Mức 3": "Bể 03 - Xăng E10 RON 95 Mức 3",
+      "Bể 04 - Xăng E10 RON 95 Mức 3": "Bể 04 - Xăng E10 RON 95 Mức 3"
     }
   },
   {
