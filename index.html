@@ -598,8 +598,8 @@
             
             main {
                 grid-template-columns: 1fr;
-                margin: 1rem auto;
-                padding: 0 1rem;
+                margin: 0.5rem auto !important;
+                padding: 0 0.75rem !important;
             }
             
             header {
@@ -623,12 +623,40 @@
             .detail-header {
                 flex-direction: column;
                 align-items: stretch;
-                gap: 0.8rem;
+                gap: 0.4rem !important;
+                padding-bottom: 0.4rem !important;
+                margin-bottom: 0.6rem !important;
             }
             
             .share-btn {
-                width: 100%;
-                justify-content: center;
+                display: none !important;
+            }
+
+            .glass-card {
+                padding: 1rem !important;
+            }
+
+            .input-group select {
+                font-size: 0.82rem !important;
+                padding: 0.6rem 0.4rem !important;
+            }
+
+            .input-group input {
+                font-size: 0.95rem !important;
+                padding: 0.6rem 0.8rem !important;
+            }
+
+            .query-grid {
+                gap: 0.8rem !important;
+                margin-bottom: 0.8rem !important;
+            }
+
+            .result-card {
+                padding: 0.8rem 1rem !important;
+            }
+
+            .result-value {
+                font-size: 2.2rem !important;
             }
 
             .station-list {
@@ -655,6 +683,11 @@
             .station-item p {
                 display: none !important;
             }
+        }
+
+        /* General share button hide */
+        .share-btn {
+            display: none !important;
         }
     </style>
 </head>
