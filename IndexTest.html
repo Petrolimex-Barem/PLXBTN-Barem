@@ -416,6 +416,18 @@
             gap: 1rem;
         }
 
+        .tabs-max-vol {
+            margin-left: auto;
+            align-self: center;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--primary);
+            background: rgba(240, 90, 40, 0.08);
+            border: 1px solid rgba(240, 90, 40, 0.15);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
         .tab {
             padding: 0.5rem 1rem;
             cursor: pointer;
@@ -763,6 +775,7 @@
                 <div class="tabs">
                     <div class="tab active" onclick="switchTab('tab-neighbors')">Các điểm lân cận</div>
                     <div class="tab" onclick="switchTab('tab-all')">Toàn bộ bảng Barem</div>
+                    <div class="tabs-max-vol" id="tabs-max-vol" style="display: none;">Max: -</div>
                 </div>
 
                 <!-- Tab Neighbors -->
@@ -975,8 +988,30 @@
             }
         }
 
+        function updateMaxVolumeDisplay() {
+            const tank = document.getElementById("tank-selector").value;
+            const badge = document.getElementById("tabs-max-vol");
+            
+            if (!currentBaremData || !currentBaremData[tank]) {
+                badge.style.display = "none";
+                return;
+            }
+            
+            const tankData = currentBaremData[tank];
+            const sortedHeights = Object.keys(tankData).map(Number).sort((a,b) => a-b);
+            if (sortedHeights.length > 0) {
+                const maxH = sortedHeights[sortedHeights.length - 1];
+                const maxVol = tankData[maxH];
+                badge.innerText = `Max: ${formatNumber(maxVol)} L`;
+                badge.style.display = "block";
+            } else {
+                badge.style.display = "none";
+            }
+        }
+
         function onTankChange() {
             updateSelectColor();
+            updateMaxVolumeDisplay();
             calculateVolume();
             renderFullTable();
         }
