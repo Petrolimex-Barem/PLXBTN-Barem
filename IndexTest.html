@@ -330,6 +330,10 @@
             letter-spacing: 0.5px;
         }
 
+         .input-group select {
+             font-weight: 700;
+         }
+
           .input-group select, .input-group input {
              width: 100%;
              padding: 0.8rem 1rem;
@@ -953,10 +957,21 @@
             document.getElementById("result-value").innerText = "-";
             document.getElementById("interp-badge").style.display = "none";
             
+            updateSelectColor();
+            
             onTankChange();
         }
 
+        function updateSelectColor() {
+            const selector = document.getElementById("tank-selector");
+            const selectedOpt = selector.options[selector.selectedIndex];
+            if (selectedOpt) {
+                selector.style.color = selectedOpt.style.color;
+            }
+        }
+
         function onTankChange() {
+            updateSelectColor();
             calculateVolume();
             renderFullTable();
         }
