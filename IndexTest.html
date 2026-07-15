@@ -598,8 +598,8 @@
             
             main {
                 grid-template-columns: 1fr;
-                margin: 1rem auto;
-                padding: 0 1rem;
+                margin: 0.5rem auto !important;
+                padding: 0 0.75rem !important;
             }
             
             header {
@@ -623,12 +623,40 @@
             .detail-header {
                 flex-direction: column;
                 align-items: stretch;
-                gap: 0.8rem;
+                gap: 0.4rem !important;
+                padding-bottom: 0.4rem !important;
+                margin-bottom: 0.6rem !important;
             }
             
             .share-btn {
-                width: 100%;
-                justify-content: center;
+                display: none !important;
+            }
+
+            .glass-card {
+                padding: 1rem !important;
+            }
+
+            .input-group select {
+                font-size: 0.82rem !important;
+                padding: 0.6rem 0.4rem !important;
+            }
+
+            .input-group input {
+                font-size: 0.95rem !important;
+                padding: 0.6rem 0.8rem !important;
+            }
+
+            .query-grid {
+                gap: 0.8rem !important;
+                margin-bottom: 0.8rem !important;
+            }
+
+            .result-card {
+                padding: 0.8rem 1rem !important;
+            }
+
+            .result-value {
+                font-size: 2.2rem !important;
             }
 
             .station-list {
@@ -655,6 +683,11 @@
             .station-item p {
                 display: none !important;
             }
+        }
+
+        /* General share button hide */
+        .share-btn {
+            display: none !important;
         }
     </style>
 </head>
@@ -694,7 +727,7 @@
                             ← Quay về DS CHXD
                         </div>
                         <h2 id="station-title">Cửa hàng Xăng dầu số 01</h2>
-                        <p id="station-file">Nguồn file: CHXD 01_BAREM_UPDATE 2023.xls</p>
+                        <p id="station-file" style="display: none;">Nguồn file: CHXD 01_BAREM_UPDATE 2023.xls</p>
                     </div>
                     <button class="share-btn" onclick="copyShareLink()">
                         <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
@@ -842,7 +875,6 @@
                 const cleanId = item.id.replace('CHXD_', 'CHXD ').replace('_BAREM', '');
                 div.innerHTML = `
                     <h3>${cleanId}</h3>
-                    <p>${item.name}</p>
                 `;
                 listContainer.appendChild(div);
             });
