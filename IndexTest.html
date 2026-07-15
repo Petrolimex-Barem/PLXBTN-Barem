@@ -938,15 +938,20 @@
                 opt.innerText = tankText;
                 
                 // Color formatting based on product type
-                const textLower = tankText.toLowerCase();
-                if (textLower.includes("xăng") || textLower.includes("ron")) {
-                    opt.style.color = "#C2410C"; // Xăng: Màu cam đậm / đỏ cam (Gần với màu #C2410C / #D84B1A)
+                // Chuẩn hóa chuỗi bằng cách bỏ dấu tiếng Việt để đối soát chính xác hơn
+                const normalizedText = tankText.toLowerCase()
+                    .normalize("NFD")
+                    .replace(/[\u0300-\u036f]/g, "")
+                    .replace(/đ/g, "d");
+
+                if (normalizedText.includes("xang") || normalizedText.includes("ron")) {
+                    opt.style.color = "#C2410C"; // Xăng: Màu cam đậm / đỏ cam (#C2410C)
                     opt.className = "product-xang";
-                } else if (textLower.includes("0.05s")) {
+                } else if (normalizedText.includes("0.05s") || normalizedText.includes("0,05s")) {
                     opt.style.color = "#001C7F"; // Dầu 0.05S: Màu xanh navy cực tối (#001C7F)
                     opt.className = "product-do05";
-                } else if (textLower.includes("0.001s")) {
-                    opt.style.color = "#009BDE"; // Dầu 0.001S: Màu xanh dương nhạt (#009BDE / #00a0e9)
+                } else if (normalizedText.includes("0.001s") || normalizedText.includes("0,001s")) {
+                    opt.style.color = "#009BDE"; // Dầu 0.001S: Màu xanh dương nhạt (#009BDE)
                     opt.className = "product-do001";
                 }
                 selector.appendChild(opt);
