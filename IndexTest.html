@@ -330,22 +330,22 @@
             letter-spacing: 0.5px;
         }
 
-        .input-group select, .input-group input {
-            width: 100%;
-            padding: 0.8rem 1rem;
-            background: #ffffff;
-            border: 1px solid #cbd5e1;
-            border-radius: 10px;
-            color: var(--text-main);
-            font-size: 1.1rem;
-            outline: none;
-            transition: all 0.2s;
-        }
+          .input-group select, .input-group input {
+             width: 100%;
+             padding: 0.8rem 1rem;
+             background: #ffffff;
+             border: 1px solid #cbd5e1;
+             border-radius: 10px;
+             color: var(--text-main);
+             font-size: 1.1rem;
+             outline: none;
+             transition: all 0.2s;
+         }
 
-        .input-group select:focus, .input-group input:focus {
-            border-color: var(--secondary);
-            box-shadow: 0 0 0 3px rgba(0, 28, 127, 0.1);
-        }
+         .input-group select:focus, .input-group input:focus {
+             border-color: var(--secondary);
+             box-shadow: 0 0 0 3px rgba(0, 28, 127, 0.1);
+         }
 
         .result-card {
             background: linear-gradient(135deg, rgba(0, 28, 127, 0.05), rgba(240, 90, 40, 0.05));
@@ -927,10 +927,23 @@
             meta.tanks.forEach(tank => {
                 const opt = document.createElement("option");
                 opt.value = tank;
+                let tankText = tank;
                 if (meta.tanks_info && meta.tanks_info[tank]) {
-                    opt.innerText = meta.tanks_info[tank];
-                } else {
-                    opt.innerText = tank;
+                    tankText = meta.tanks_info[tank];
+                }
+                opt.innerText = tankText;
+                
+                // Color formatting based on product type
+                const textLower = tankText.toLowerCase();
+                if (textLower.includes("xăng") || textLower.includes("ron")) {
+                    opt.style.color = "#C2410C"; // Xăng: Màu cam đậm / đỏ cam (Gần với màu #C2410C / #D84B1A)
+                    opt.className = "product-xang";
+                } else if (textLower.includes("0.05s")) {
+                    opt.style.color = "#001C7F"; // Dầu 0.05S: Màu xanh navy cực tối (#001C7F)
+                    opt.className = "product-do05";
+                } else if (textLower.includes("0.001s")) {
+                    opt.style.color = "#009BDE"; // Dầu 0.001S: Màu xanh dương nhạt (#009BDE / #00a0e9)
+                    opt.className = "product-do001";
                 }
                 selector.appendChild(opt);
             });
