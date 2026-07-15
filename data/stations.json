@@ -357,14 +357,14 @@
     "name": "CHXD 123 BAREM UPDATE 2026",
     "filename": "CHXD 123_BAREM_UPDATE 2026.xls",
     "tanks": [
-      "Barem bể 01 (Do 0,05)",
-      "Barem bể 01 (95-III)",
-      "Bể 2 - Xăng E10 RON 95 Mức 3"
+      "Bể 01 - Dầu Điêzen 0,05S Mức 2",
+      "Bể 02 - Xăng E10 RON 95 Mức 3",
+      "Bể 03 - Xăng E10 RON 95 Mức 3"
     ],
     "tanks_info": {
-      "Barem bể 01 (Do 0,05)": "Barem bể 01 (Do 0,05)",
-      "Barem bể 01 (95-III)": "Barem bể 01 (95-III)",
-      "Bể 2 - Xăng E10 RON 95 Mức 3": "Bể 2 - Xăng E10 RON 95 Mức 3"
+      "Bể 01 - Dầu Điêzen 0,05S Mức 2": "Bể 01 - Dầu Điêzen 0,05S Mức 2",
+      "Bể 02 - Xăng E10 RON 95 Mức 3": "Bể 02 - Xăng E10 RON 95 Mức 3",
+      "Bể 03 - Xăng E10 RON 95 Mức 3": "Bể 03 - Xăng E10 RON 95 Mức 3"
     }
   },
   {
