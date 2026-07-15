@@ -1004,6 +1004,26 @@
                 const maxVol = tankData[maxH];
                 badge.innerText = `Max: ${formatNumber(maxVol)} L`;
                 badge.style.display = "block";
+                
+                // Đồng bộ màu sắc với mặt hàng đang chọn
+                const selector = document.getElementById("tank-selector");
+                const selectedOpt = selector.options[selector.selectedIndex];
+                if (selectedOpt) {
+                    const prodColor = selectedOpt.style.color;
+                    badge.style.color = prodColor;
+                    badge.style.borderColor = prodColor;
+                    
+                    // Thiết lập màu nền nhạt tương ứng với mặt hàng
+                    if (selectedOpt.className === "product-xang") {
+                        badge.style.background = "rgba(194, 65, 12, 0.08)";
+                    } else if (selectedOpt.className === "product-do05") {
+                        badge.style.background = "rgba(0, 28, 127, 0.08)";
+                    } else if (selectedOpt.className === "product-do001") {
+                        badge.style.background = "rgba(0, 155, 222, 0.08)";
+                    } else {
+                        badge.style.background = "rgba(0, 0, 0, 0.04)";
+                    }
+                }
             } else {
                 badge.style.display = "none";
             }
