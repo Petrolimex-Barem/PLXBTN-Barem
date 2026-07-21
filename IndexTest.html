@@ -351,6 +351,126 @@
              box-shadow: 0 0 0 3px rgba(0, 28, 127, 0.1);
          }
 
+        /* Custom Select Component */
+        .custom-select-wrapper {
+            position: relative;
+            width: 100%;
+            user-select: none;
+        }
+
+        .custom-select-trigger {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .custom-select-wrapper.open .custom-select-trigger {
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(0, 28, 127, 0.1);
+        }
+
+        .custom-select-arrow {
+            transition: transform 0.2s ease;
+            fill: currentColor;
+            flex-shrink: 0;
+            margin-left: 8px;
+            opacity: 0.7;
+        }
+
+        .custom-select-wrapper.open .custom-select-arrow {
+            transform: rotate(180deg);
+        }
+
+        .custom-select-options {
+            position: absolute;
+            top: calc(100% + 6px);
+            left: 0;
+            right: 0;
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.12), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+            z-index: 500;
+            max-height: 250px;
+            overflow-y: auto;
+            padding: 6px;
+            display: none;
+            opacity: 0;
+            transform: translateY(-8px);
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+
+        .custom-select-wrapper.open .custom-select-options {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .custom-option-item {
+            padding: 0.75rem 0.9rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.15s ease;
+            margin-bottom: 2px;
+        }
+
+        .custom-option-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .custom-option-item:hover {
+            background: rgba(0, 28, 127, 0.04);
+            transform: translateX(2px);
+        }
+
+        /* Product type hover tints */
+        .custom-option-item.product-xang {
+            color: #C2410C;
+        }
+        .custom-option-item.product-xang:hover, .custom-option-item.product-xang.selected {
+            background: rgba(194, 65, 12, 0.08) !important;
+        }
+
+        .custom-option-item.product-do05 {
+            color: #001C7F;
+        }
+        .custom-option-item.product-do05:hover, .custom-option-item.product-do05.selected {
+            background: rgba(0, 28, 127, 0.08) !important;
+        }
+
+        .custom-option-item.product-do001 {
+            color: #2563EB;
+        }
+        .custom-option-item.product-do001:hover, .custom-option-item.product-do001.selected {
+            background: rgba(37, 99, 235, 0.08) !important;
+        }
+
+        @media (max-width: 768px) {
+            .custom-select-trigger {
+                font-size: 0.82rem !important;
+                padding: 0.6rem 0.6rem !important;
+            }
+            .custom-option-item {
+                font-size: 0.82rem !important;
+                padding: 0.6rem 0.6rem !important;
+            }
+        }
+
         .result-card {
             background: linear-gradient(135deg, rgba(0, 28, 127, 0.05), rgba(240, 90, 40, 0.05));
             border: 1px solid #cbd5e1;
@@ -754,7 +874,17 @@
                 <div class="query-grid">
                     <div class="input-group">
                         <label for="tank-selector">Chọn Bể (Bồn)</label>
-                        <select id="tank-selector" onchange="onTankChange()"></select>
+                        <select id="tank-selector" onchange="onTankChange()" style="display: none;"></select>
+                        
+                        <div class="custom-select-wrapper" id="custom-select-wrapper">
+                            <div class="custom-select-trigger" id="custom-select-trigger" onclick="toggleCustomSelect(event)">
+                                <span id="custom-select-label">Chọn Bể (Bồn)...</span>
+                                <svg class="custom-select-arrow" viewBox="0 0 24 24" width="20" height="20">
+                                    <path d="M7 10l5 5 5-5z"/>
+                                </svg>
+                            </div>
+                            <div class="custom-select-options" id="custom-select-options"></div>
+                        </div>
                     </div>
                     <div class="input-group">
                         <label for="height-input">Chiều cao H (cm)</label>
@@ -938,10 +1068,13 @@
             document.getElementById("station-title").innerText = `${cleanId} - Bảng Tra Barem`;
             document.getElementById("station-file").innerText = `Nguồn file: ${meta.filename}`;
 
-            // Populate tank dropdown
+            // Populate tank dropdown & Custom Select UI
             const selector = document.getElementById("tank-selector");
             selector.innerHTML = "";
-            meta.tanks.forEach(tank => {
+            const customOptionsContainer = document.getElementById("custom-select-options");
+            if (customOptionsContainer) customOptionsContainer.innerHTML = "";
+
+            meta.tanks.forEach((tank, idx) => {
                 const opt = document.createElement("option");
                 opt.value = tank;
                 let tankText = tank;
@@ -950,24 +1083,57 @@
                 }
                 opt.innerText = tankText;
                 
-                // Color formatting based on product type
-                // Chuẩn hóa chuỗi bằng cách bỏ dấu tiếng Việt để đối soát chính xác hơn
                 const normalizedText = tankText.toLowerCase()
                     .normalize("NFD")
                     .replace(/[\u0300-\u036f]/g, "")
                     .replace(/đ/g, "d");
 
+                let prodClass = "";
                 if (normalizedText.includes("xang") || normalizedText.includes("ron")) {
-                    opt.style.color = "#C2410C"; // Xăng: Màu cam đậm / đỏ cam (#C2410C)
+                    opt.style.color = "#C2410C";
                     opt.className = "product-xang";
+                    prodClass = "product-xang";
                 } else if (normalizedText.includes("0.05s") || normalizedText.includes("0,05s")) {
-                    opt.style.color = "#001C7F"; // Dầu 0.05S: Màu xanh navy cực tối (#001C7F)
+                    opt.style.color = "#001C7F";
                     opt.className = "product-do05";
+                    prodClass = "product-do05";
                 } else if (normalizedText.includes("0.001s") || normalizedText.includes("0,001s")) {
-                    opt.style.color = "#2563EB"; // Dầu 0.001S: Màu xanh Royal Blue đậm đà (#2563EB)
+                    opt.style.color = "#2563EB";
                     opt.className = "product-do001";
+                    prodClass = "product-do001";
                 }
                 selector.appendChild(opt);
+
+                // Build Custom Option Element
+                if (customOptionsContainer) {
+                    const customOpt = document.createElement("div");
+                    customOpt.className = `custom-option-item ${prodClass} ${idx === 0 ? 'selected' : ''}`;
+                    customOpt.dataset.value = tank;
+                    customOpt.innerHTML = `
+                        <span>${tankText}</span>
+                        <span class="checkmark" style="display: ${idx === 0 ? 'inline' : 'none'}; font-size: 0.9rem;">✓</span>
+                    `;
+
+                    customOpt.onclick = (e) => {
+                        e.stopPropagation();
+                        selector.value = tank;
+                        
+                        document.querySelectorAll(".custom-option-item").forEach(item => {
+                            item.classList.remove("selected");
+                            const cm = item.querySelector(".checkmark");
+                            if (cm) cm.style.display = "none";
+                        });
+                        customOpt.classList.add("selected");
+                        const cm = customOpt.querySelector(".checkmark");
+                        if (cm) cm.style.display = "inline";
+                        
+                        const wrapper = document.getElementById("custom-select-wrapper");
+                        if (wrapper) wrapper.classList.remove("open");
+                        
+                        onTankChange();
+                    };
+                    customOptionsContainer.appendChild(customOpt);
+                }
             });
 
             // Set default height and calculate
@@ -983,10 +1149,28 @@
         function updateSelectColor() {
             const selector = document.getElementById("tank-selector");
             const selectedOpt = selector.options[selector.selectedIndex];
-            if (selectedOpt) {
+            const customLabel = document.getElementById("custom-select-label");
+            const customTrigger = document.getElementById("custom-select-trigger");
+
+            if (selectedOpt && customLabel) {
                 selector.style.color = selectedOpt.style.color;
+                customLabel.innerText = selectedOpt.innerText;
+                if (customTrigger) customTrigger.style.color = selectedOpt.style.color;
             }
         }
+
+        function toggleCustomSelect(event) {
+            if (event) event.stopPropagation();
+            const wrapper = document.getElementById("custom-select-wrapper");
+            if (wrapper) wrapper.classList.toggle("open");
+        }
+
+        document.addEventListener("click", (e) => {
+            const wrapper = document.getElementById("custom-select-wrapper");
+            if (wrapper && !wrapper.contains(e.target)) {
+                wrapper.classList.remove("open");
+            }
+        });
 
         function updateMaxVolumeDisplay() {
             const tank = document.getElementById("tank-selector").value;
