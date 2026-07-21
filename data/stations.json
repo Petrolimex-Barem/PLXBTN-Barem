@@ -1859,17 +1859,17 @@
     "filename": "CHXD 219_BAREM_FINAL.xlsm",
     "tanks": [
       "Bể 1 - Dầu Điêzen 0,001S Mức 5",
-      "Bể 02 - Xăng E10 RON 95 Mức 5",
+      "Bể 02",
       "Bể 3 - Xăng E10 RON 95 Mức 5",
-      "Bể 04 - Xăng E10 RON 95 Mức 5",
+      "Bể 04",
       "Bể 5 - Xăng E10 RON 95 Mức 5",
       "Bể 6 - Dầu Điêzen 0,05S Mức 2"
     ],
     "tanks_info": {
       "Bể 1 - Dầu Điêzen 0,001S Mức 5": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
-      "Bể 02 - Xăng E10 RON 95 Mức 5": "Bể 02 - Xăng E10 RON 95 Mức 5",
+      "Bể 02": "Bể 02",
       "Bể 3 - Xăng E10 RON 95 Mức 5": "Bể 3 - Xăng E10 RON 95 Mức 5",
-      "Bể 04 - Xăng E10 RON 95 Mức 5": "Bể 04 - Xăng E10 RON 95 Mức 5",
+      "Bể 04": "Bể 04",
       "Bể 5 - Xăng E10 RON 95 Mức 5": "Bể 5 - Xăng E10 RON 95 Mức 5",
       "Bể 6 - Dầu Điêzen 0,05S Mức 2": "Bể 6 - Dầu Điêzen 0,05S Mức 2"
     }
