@@ -488,14 +488,14 @@
     "name": "CHXD 131 BAREM UPDATE 2023",
     "filename": "CHXD 131_BAREM_UPDATE 2023.xls",
     "tanks": [
-      "Bể 1 - Xăng E10 RON 95 Mức 5",
-      "Bể 2 - Dầu DO 0.05S-II",
-      "Bể 04 - Xăng RON 92"
+      "Bể 01 - Xăng E10 RON 95 Mức 5",
+      "Bể 02 - Dầu Điêzen 0,001S Mức 5",
+      "Bể 04"
     ],
     "tanks_info": {
-      "Bể 1 - Xăng E10 RON 95 Mức 5": "Bể 1 - Xăng E10 RON 95 Mức 5",
-      "Bể 2 - Dầu DO 0.05S-II": "Bể 2 - Dầu DO 0.05S-II",
-      "Bể 04 - Xăng RON 92": "Bể 04 - Xăng RON 92"
+      "Bể 01 - Xăng E10 RON 95 Mức 5": "Bể 01 - Xăng E10 RON 95 Mức 5",
+      "Bể 02 - Dầu Điêzen 0,001S Mức 5": "Bể 02 - Dầu Điêzen 0,001S Mức 5",
+      "Bể 04": "Bể 04"
     }
   },
   {
