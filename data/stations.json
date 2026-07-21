@@ -96,14 +96,14 @@
     "name": "CHXD 107 BAREM UPDATE 2023 (dầu D0 0",
     "filename": "CHXD 107_BAREM_UPDATE 2023 (dầu D0 0.001S-V).xls",
     "tanks": [
-      "Bể 1 - Xăng E10 RON 95 Mức 3",
-      "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Bể 01 - Xăng E10 RON 95 Mức 3",
+      "Bể 02 - Xăng E10 RON 95 Mức 3",
       "Bể 3 - Dầu DO 0,001S-V",
       "Bể 4 - Xăng E10 RON 95 Mức 3"
     ],
     "tanks_info": {
-      "Bể 1 - Xăng E10 RON 95 Mức 3": "Bể 1 - Xăng E10 RON 95 Mức 3",
-      "Bể 2 - Xăng E10 RON 95 Mức 3": "Bể 2 - Xăng E10 RON 95 Mức 3",
+      "Bể 01 - Xăng E10 RON 95 Mức 3": "Bể 01 - Xăng E10 RON 95 Mức 3",
+      "Bể 02 - Xăng E10 RON 95 Mức 3": "Bể 02 - Xăng E10 RON 95 Mức 3",
       "Bể 3 - Dầu DO 0,001S-V": "Bể 3 - Dầu DO 0,001S-V",
       "Bể 4 - Xăng E10 RON 95 Mức 3": "Bể 4 - Xăng E10 RON 95 Mức 3"
     }
@@ -552,12 +552,12 @@
     "tanks": [
       "Bể 1 - Dầu DO 0.05S-II",
       "Bể 2 - Dầu DO 0.001S-V",
-      "Bể 3 - Xăng E10 RON 95 Mức 3"
+      "Bể 03 - Xăng E10 RON 95 Mức 3"
     ],
     "tanks_info": {
       "Bể 1 - Dầu DO 0.05S-II": "Bể 1 - Dầu DO 0.05S-II",
       "Bể 2 - Dầu DO 0.001S-V": "Bể 2 - Dầu DO 0.001S-V",
-      "Bể 3 - Xăng E10 RON 95 Mức 3": "Bể 3 - Xăng E10 RON 95 Mức 3"
+      "Bể 03 - Xăng E10 RON 95 Mức 3": "Bể 03 - Xăng E10 RON 95 Mức 3"
     }
   },
   {
@@ -755,13 +755,13 @@
     "name": "CHXD 148 BAREM UPDATE 2024",
     "filename": "CHXD 148_BAREM_UPDATE 2024.xls",
     "tanks": [
-      "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Bể 01 - Xăng E10 RON 95 Mức 5",
       "Bể 2 - Dầu DO 0.05S-II",
       "Bể 3 - Dầu DO 0.001S-V",
       "Bể 4 - Xăng E10 RON 95 Mức 5"
     ],
     "tanks_info": {
-      "Bể 1 - Xăng E10 RON 95 Mức 5": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Bể 01 - Xăng E10 RON 95 Mức 5": "Bể 01 - Xăng E10 RON 95 Mức 5",
       "Bể 2 - Dầu DO 0.05S-II": "Bể 2 - Dầu DO 0.05S-II",
       "Bể 3 - Dầu DO 0.001S-V": "Bể 3 - Dầu DO 0.001S-V",
       "Bể 4 - Xăng E10 RON 95 Mức 5": "Bể 4 - Xăng E10 RON 95 Mức 5"
@@ -1256,13 +1256,13 @@
     "tanks": [
       "Bể 1 - Dầu DO 0.05S-II",
       "Bể 2 - Dầu DO 0.001S-V",
-      "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Bể 03 - Xăng E10 RON 95 Mức 5",
       "Bể 4 - Xăng E10 RON 95 Mức 5"
     ],
     "tanks_info": {
       "Bể 1 - Dầu DO 0.05S-II": "Bể 1 - Dầu DO 0.05S-II",
       "Bể 2 - Dầu DO 0.001S-V": "Bể 2 - Dầu DO 0.001S-V",
-      "Bể 3 - Xăng E10 RON 95 Mức 5": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Bể 03 - Xăng E10 RON 95 Mức 5": "Bể 03 - Xăng E10 RON 95 Mức 5",
       "Bể 4 - Xăng E10 RON 95 Mức 5": "Bể 4 - Xăng E10 RON 95 Mức 5"
     }
   },
@@ -1799,12 +1799,12 @@
     "filename": "CHXD 213_BAREM_UPDATE 2023.xls",
     "tanks": [
       "Bể 1 - Dầu DO 0.05S-II",
-      "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Bể 02 - Xăng E10 RON 95 Mức 5",
       "Bể 3 - Xăng E10 RON 95 Mức 5"
     ],
     "tanks_info": {
       "Bể 1 - Dầu DO 0.05S-II": "Bể 1 - Dầu DO 0.05S-II",
-      "Bể 2 - Xăng E10 RON 95 Mức 5": "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Bể 02 - Xăng E10 RON 95 Mức 5": "Bể 02 - Xăng E10 RON 95 Mức 5",
       "Bể 3 - Xăng E10 RON 95 Mức 5": "Bể 3 - Xăng E10 RON 95 Mức 5"
     }
   },
@@ -1828,11 +1828,11 @@
     "name": "CHXD 215 BAREM UPDATE 2023",
     "filename": "CHXD 215_BAREM_UPDATE 2023.xls",
     "tanks": [
-      "Bể 3 - Xăng E10 RON 95 Mức 3",
+      "Bể 03 - Xăng E10 RON 95 Mức 3",
       "Bể 4 - Dầu DO 0.05S-II"
     ],
     "tanks_info": {
-      "Bể 3 - Xăng E10 RON 95 Mức 3": "Bể 3 - Xăng E10 RON 95 Mức 3",
+      "Bể 03 - Xăng E10 RON 95 Mức 3": "Bể 03 - Xăng E10 RON 95 Mức 3",
       "Bể 4 - Dầu DO 0.05S-II": "Bể 4 - Dầu DO 0.05S-II"
     }
   },
@@ -1841,13 +1841,13 @@
     "name": "CHXD 216 BAREM UPDATE 2024",
     "filename": "CHXD 216_BAREM_UPDATE 2024.xls",
     "tanks": [
-      "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Bể 01 - Xăng E10 RON 95 Mức 5",
       "Bể 2 - Xăng E10 RON 95 Mức 5",
       "Bể 3 - Dầu DO 0.05S-II",
       "Bể 4 - Dầu DO 0,001S-V"
     ],
     "tanks_info": {
-      "Bể 1 - Xăng E10 RON 95 Mức 5": "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Bể 01 - Xăng E10 RON 95 Mức 5": "Bể 01 - Xăng E10 RON 95 Mức 5",
       "Bể 2 - Xăng E10 RON 95 Mức 5": "Bể 2 - Xăng E10 RON 95 Mức 5",
       "Bể 3 - Dầu DO 0.05S-II": "Bể 3 - Dầu DO 0.05S-II",
       "Bể 4 - Dầu DO 0,001S-V": "Bể 4 - Dầu DO 0,001S-V"
