@@ -1049,12 +1049,12 @@
     "tanks": [
       "Bể 1 - Dầu Điêzen 0,001S Mức 5",
       "Bể 2 - Xăng E10 RON 95 Mức 5",
-      "Bể 3 - Xăng E10 RON 95 Mức 5"
+      "Bể 3 - Dầu Điêzen 0,05S Mức 2"
     ],
     "tanks_info": {
       "Bể 1 - Dầu Điêzen 0,001S Mức 5": "Bể 1 - Dầu Điêzen 0,001S Mức 5",
       "Bể 2 - Xăng E10 RON 95 Mức 5": "Bể 2 - Xăng E10 RON 95 Mức 5",
-      "Bể 3 - Xăng E10 RON 95 Mức 5": "Bể 3 - Xăng E10 RON 95 Mức 5"
+      "Bể 3 - Dầu Điêzen 0,05S Mức 2": "Bể 3 - Dầu Điêzen 0,05S Mức 2"
     }
   },
   {
