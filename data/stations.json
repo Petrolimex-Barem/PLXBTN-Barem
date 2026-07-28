@@ -726,13 +726,15 @@
     "filename": "CHXD 146_BAREM_UPDATE 2026.xls",
     "tanks": [
       "Bể 1 - Xăng E10 RON 95 Mức 5",
+      "Bể 2 - Dầu DO 0.001S-V",
       "Bể 3 - Xăng E10 RON 95 Mức 5",
       "Bể 4 - Dầu DO 0.05S-II"
     ],
     "tanks_info": {
       "Bể 1 - Xăng E10 RON 95 Mức 5": "Bể 1 - Xăng E10 RON 95 Mức 5",
       "Bể 3 - Xăng E10 RON 95 Mức 5": "Bể 3 - Xăng E10 RON 95 Mức 5",
-      "Bể 4 - Dầu DO 0.05S-II": "Bể 4 - Dầu DO 0.05S-II"
+      "Bể 4 - Dầu DO 0.05S-II": "Bể 4 - Dầu DO 0.05S-II",
+      "Bể 2 - Dầu DO 0.001S-V": "Bể 2 - Dầu DO 0.001S-V"
     }
   },
   {
