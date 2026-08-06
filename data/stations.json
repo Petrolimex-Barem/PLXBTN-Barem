@@ -1653,14 +1653,14 @@
     "name": "CHXD 204 BAREM UPDATE 2024",
     "filename": "CHXD 204_BAREM_UPDATE 2024.xls",
     "tanks": [
-      "Bể 1 - Xăng E10 RON 95 Mức 3",
+      "Bể 1 - Dầu Điêzen 0,001S Mức 5",
       "Bể 3 - Dầu DO 0.05S-II",
       "Bể 4 - Xăng E10 RON 95 Mức 3"
     ],
     "tanks_info": {
-      "Bể 1 - Xăng E10 RON 95 Mức 3": "Bể 1 - Xăng E10 RON 95 Mức 3",
       "Bể 3 - Dầu DO 0.05S-II": "Bể 3 - Dầu DO 0.05S-II",
-      "Bể 4 - Xăng E10 RON 95 Mức 3": "Bể 4 - Xăng E10 RON 95 Mức 3"
+      "Bể 4 - Xăng E10 RON 95 Mức 3": "Bể 4 - Xăng E10 RON 95 Mức 3",
+      "Bể 1 - Dầu Điêzen 0,001S Mức 5": "Bể 1 - Dầu Điêzen 0,001S Mức 5"
     }
   },
   {
