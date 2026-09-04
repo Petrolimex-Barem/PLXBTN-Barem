@@ -1144,15 +1144,15 @@
     "filename": "CHXD 172_BAREM_UPDATE 2025.xls",
     "tanks": [
       "Bể 1 - Dầu DO 0.05S-II",
-      "Bể 2 - Xăng E10 RON 95 Mức 5",
+      "Bể 2 - Dầu Điêzen 0,001S Mức 5",
       "Bể 3 - Xăng E10 RON 95 Mức 5",
       "Bể 4 - Dầu Điêzen 0,001S Mức 5"
     ],
     "tanks_info": {
       "Bể 1 - Dầu DO 0.05S-II": "Bể 1 - Dầu DO 0.05S-II",
-      "Bể 2 - Xăng E10 RON 95 Mức 5": "Bể 2 - Xăng E10 RON 95 Mức 5",
       "Bể 3 - Xăng E10 RON 95 Mức 5": "Bể 3 - Xăng E10 RON 95 Mức 5",
-      "Bể 4 - Dầu Điêzen 0,001S Mức 5": "Bể 4 - Dầu Điêzen 0,001S Mức 5"
+      "Bể 4 - Dầu Điêzen 0,001S Mức 5": "Bể 4 - Dầu Điêzen 0,001S Mức 5",
+      "Bể 2 - Dầu Điêzen 0,001S Mức 5": "Bể 2 - Dầu Điêzen 0,001S Mức 5"
     }
   },
   {
