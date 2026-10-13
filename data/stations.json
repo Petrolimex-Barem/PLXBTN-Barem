@@ -81,14 +81,18 @@
   {
     "id": "CHXD_106_BAREM",
     "name": "CHXD 106 BAREM UPDATE 2024",
-    "filename": "CHXD 106_BAREM_UPDATE 2024.xls",
+    "filename": "CHXD 106_BAREM_2024.xls",
     "tanks": [
-      "Barem 10m3 (95-95V-Do)",
-      "Barem 20m3 (Do 0,05)"
+      "Bể 1 - Dầu Điêzen 0,05S Mức 2",
+      "Bể 2 - Dầu Điêzen 0,001S Mức 5",
+      "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Bể 4 - Xăng E10 RON 95 Mức 5"
     ],
     "tanks_info": {
-      "Barem 10m3 (95-95V-Do)": "Barem 10m3 (95-95V-Do)",
-      "Barem 20m3 (Do 0,05)": "Barem 20m3 (Do 0,05)"
+      "Bể 1 - Dầu Điêzen 0,05S Mức 2": "Bể 1 - Dầu Điêzen 0,05S Mức 2",
+      "Bể 2 - Dầu Điêzen 0,001S Mức 5": "Bể 2 - Dầu Điêzen 0,001S Mức 5",
+      "Bể 3 - Xăng E10 RON 95 Mức 5": "Bể 3 - Xăng E10 RON 95 Mức 5",
+      "Bể 4 - Xăng E10 RON 95 Mức 5": "Bể 4 - Xăng E10 RON 95 Mức 5"
     }
   },
   {
