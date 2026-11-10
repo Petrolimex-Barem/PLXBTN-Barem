@@ -1879,5 +1879,20 @@
       "Bể 5 - Xăng E10 RON 95 Mức 5": "Bể 5 - Xăng E10 RON 95 Mức 5",
       "Bể 6 - Dầu Điêzen 0,05S Mức 2": "Bể 6 - Dầu Điêzen 0,05S Mức 2"
     }
+  },
+  {
+    "id": "CHXD_220_BAREM",
+    "name": "CHXD 220 BAREM 2026",
+    "filename": "BẢNG IN BAREM CH 220.xlsx",
+    "tanks": [
+      "Bể 1 - Dầu DO 0,001S-V",
+      "Bể 2 - Xăng E10 RON 95",
+      "Bể 3 - Dầu DO 0,05S-II"
+    ],
+    "tanks_info": {
+      "Bể 1 - Dầu DO 0,001S-V": "Bể 1 - Dầu DO 0,001S-V",
+      "Bể 2 - Xăng E10 RON 95": "Bể 2 - Xăng E10 RON 95",
+      "Bể 3 - Dầu DO 0,05S-II": "Bể 3 - Dầu DO 0,05S-II"
+    }
   }
 ]
